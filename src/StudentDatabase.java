@@ -1,4 +1,10 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
+
 public class StudentDatabase {
     private ArrayList<Student> database = new ArrayList<>();
     private int studentCount;
@@ -112,8 +118,58 @@ public class StudentDatabase {
         database.clear();
     }
 
-    public String readFile(){
+    public ArrayList<Student> readFile(String filename){
+        try {
+            File myObj = new File(filename);
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                String[] command = data.split(",");
+                switch (command[0]) {
+                    case "S", "M", "A" -> {
+                        if (command.length == 4 || command.length == 6) {
+                            addStudent(data);
+                        } else {
+                            throw new Exception("malformed student command");
+                        }
+                    }
+                    case "R" -> {
+                        if (command.length == 4 || command.length == 5) {
+                            addResult(command[1],data);
+                        } else {
+                            throw new Exception("malformed result command");
+                        }
+                    }
+                    case "P" -> {
+                        if (command.length == 4) {
+                            addRewards(data);
+                        } else {
+                            throw new Exception("malformed student command");
+                        }
+                    }
+                }
+            }
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
-    return"";
+        return database;
+    }
+
+    public void recordsToFile(String destination){
+        String output = printRecords();
+        try {
+            FileWriter Writer = new FileWriter(destination);
+            Writer.write(output);
+            Writer.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
     }
 }

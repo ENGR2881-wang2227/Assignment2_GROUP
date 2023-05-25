@@ -13,7 +13,7 @@ public class Main
         System.out.println(studentDataBase.addResult("R,9800123,COMP1000,PS,55","9800123"));
         System.out.println(studentDataBase.addResult("R,9821012,COMP1000,DN,75","9821012"));
         System.out.println(studentDataBase.addResult("R,9800123,COMP1001,DN,77","9800123"));
-        System.out.println(studentDataBase.addResult("R,9800123,HIST1234,HD","9800123"));
+        //System.out.println(studentDataBase.addResult("R,9800123,HIST1234,HD","9800123"));
         System.out.println(studentDataBase.addResult("R,9821012,PHYS1010,HD,93","9821012"));
         System.out.println(studentDataBase.addResult("R,9800123,PSYC0123,FL,42","9800123"));
 

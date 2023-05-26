@@ -1,8 +1,41 @@
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main
 {
     public static void main(String[] args)
     {
         StudentDatabase studentDataBase = new StudentDatabase();
+        File tmpDir;
+        String filename;
+         do {
+             System.out.println("enter a valid filepath to a .txt database file");
+             Scanner myObj = new Scanner(System.in);
+             filename = myObj.nextLine();
+             tmpDir = new File(filename);
+         }
+         while (tmpDir.exists());
+         System.out.println("valid path inputted");
+         System.out.println();
+
+         studentDataBase.readFile(filename);
+         ArrayList<Student> db =  studentDataBase.getDb();
+         System.out.println("read "+db.size()+" students");
+
+
+         do{
+             System.out.println("enter a valid destination path");
+             Scanner myObj = new Scanner(System.in);
+             filename = myObj.nextLine();
+             tmpDir = new File(filename);
+         }
+         while(tmpDir.exists() || tmpDir.isDirectory());
+
+         studentDataBase.recordsToFile(filename);
+         System.out.println("file written");
+
+        /*
         System.out.println("Add student:");
         System.out.println(studentDataBase.addStudent("S,9800123,Smith,John Paul"));
         System.out.println(studentDataBase.addStudent("M,9821012,Jones,Mary,Chemistry Prize 1998"));
@@ -34,5 +67,6 @@ public class Main
         studentDataBase.clearRecords();
         System.out.println("After clear");
         System.out.println(studentDataBase.printRecords());
+        */
     }
 }

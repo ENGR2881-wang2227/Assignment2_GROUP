@@ -36,7 +36,7 @@ public class Student {
         else if(degree.equals("A")){ return " Art";}
         else if(degree.equals("M")){ return "Medicine";}
         else
-        return degree;
+            return degree;
     }
 
     public int getTopicCount() {
@@ -49,13 +49,16 @@ public class Student {
 
     public void addResult(String input)
     {
-        if(result.size()<24);
-        String[] list = input.split(",");
-        result.add(new Topic(list[2], list[3], Integer.valueOf(list[4])));
-        topicCount++;
+        if(result.size()<24){
+            String[] list = input.split(",");
+            result.add(new Topic(list[2], list[3], Integer.valueOf(list[4])));
+            topicCount++;
+        }
     }
 
-
+    public int resultSize(){
+        return result.size();
+    }
     public String show() {
         String print1 = "";
         print1 += firstName + " " + lastName + " (Student ID: " + studentID + ")\n";

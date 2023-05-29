@@ -18,25 +18,25 @@ public class StudentDatabase {
 
     public String addStudent(String student) {
         if (database.size() < 1000) {
-        String[] list = student.split(",");
-        for (int i = 0; i < database.size(); i++) {
-            if (list[1].equals(database.get(i).getStudentID())) {
-                return "Already in system";
+            String[] list = student.split(",");
+            for (int i = 0; i < database.size(); i++) {
+                if (list[1].equals(database.get(i).getStudentID())) {
+                    return "Already in system";
+                }
             }
-        }
-        switch (list[0]) {
-            case "M":
-                database.add(new MStudent(student));
-                break;
-            case "A":
-                database.add(new AStudent(student));
-                break;
-            default:
-                database.add(new Student(student));
-                break;
+            switch (list[0]) {
+                case "M":
+                    database.add(new MStudent(student));
+                    break;
+                case "A":
+                    database.add(new AStudent(student));
+                    break;
+                default:
+                    database.add(new Student(student));
+                    break;
 
-        }
-        return "Done";
+            }
+            return "Done";
         }
         return"More than 1000 students unable to add, please clear database";
     }
@@ -54,7 +54,7 @@ public class StudentDatabase {
     public boolean addResult(String result, String studentID) {
         boolean b = false;
         for (int i = 0; i < database.size(); i++) {
-            if (studentID.equals(database.get(i).getStudentID())) {
+            if (studentID.equals(database.get(i).getStudentID())&&database.get(i).resultSize()<24) {
                 database.get(i).addResult(result);
                 b = true;
             }

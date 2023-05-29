@@ -3,6 +3,9 @@ import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
 class Panels extends JFrame {
     Panels() {
         setTitle("Student Program Database");
@@ -48,6 +51,24 @@ class Panels extends JFrame {
         JTextField StudentIDTxt = new JTextField();
         panel.add(StudentIDTxt);
         StudentIDTxt.setBounds(120, 45, 100, 20);
+        StudentIDTxt.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent ke) {
+                String value = StudentIDTxt.getText();
+                int l = value.length();
+                if (ke.getKeyChar() == 10) {
+                } else if (ke.getKeyChar() >= '0' && ke.getKeyChar() <= '9') {
+                    StudentIDTxt.setEditable(true);
+
+                } else if (ke.getKeyChar() == 8) {
+                } else {
+                    StudentIDTxt.setText("");
+                    JOptionPane.showMessageDialog(
+                            null, "Please Enter vaild student ID");
+
+
+                }
+            }
+        });
 
         panel.add(LastName);
         LastName.setBounds(21, 60, 100, 50);
@@ -110,6 +131,24 @@ class Panels extends JFrame {
         JTextField MarkTXT = new JTextField();
         panel2.add(MarkTXT);
         MarkTXT.setBounds(120, 108, 100, 20);
+        MarkTXT.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent ke) {
+                String value = StudentIDTxt.getText();
+                int l = value.length();
+                if (ke.getKeyChar() == 10) {
+                } else if (ke.getKeyChar() >= '0' && ke.getKeyChar() <= '9') {
+                    StudentIDTxt.setEditable(true);
+
+                } else if (ke.getKeyChar() == 8) {
+                } else {
+                    StudentIDTxt.setText("");
+                    JOptionPane.showMessageDialog(
+                            null, "Please Enter vaild Mark");
+
+
+                }
+            }
+        });
 
         panel2.add(AddTopicResult);
         AddTopicResult.setBounds(10, 140, 150, 20);
@@ -229,6 +268,7 @@ class Panels extends JFrame {
                 String Major = MajorTXT.getText();
                 String Minor = MinorTXT.getText();
 
+
                 if (FirstNameTXT.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(
                             null, "Please Enter First Name");
@@ -242,20 +282,26 @@ class Panels extends JFrame {
                     JOptionPane.showMessageDialog(
                             null, "please Enter all fields");
                 } else {
-                    if (ChosenDegree.equals("Science")) {
-                        ChosenDegree = "S";
-                        String test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName);
-                        JOptionPane.showMessageDialog(c, test);
-                    } else if (ChosenDegree.equals("Art")) {
-                        ChosenDegree = "A";
-                        String test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName + "," + Major + "," + Minor);
-                        JOptionPane.showMessageDialog(c, test);
+                    if (StudentID.length() == 7) {
+                        if (ChosenDegree.equals("Science")) {
+                            ChosenDegree = "S";
+                            String test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName);
+                            JOptionPane.showMessageDialog(c, test);
+                        } else if (ChosenDegree.equals("Art")) {
+                            ChosenDegree = "A";
+                            String test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName + "," + Major + "," + Minor);
+                            JOptionPane.showMessageDialog(c, test);
 
-                    } else if (ChosenDegree.equals("Medicine")) {
-                        ChosenDegree = "M";
-                        String test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName);
-                        JOptionPane.showMessageDialog(c, test);
+                        } else if (ChosenDegree.equals("Medicine")) {
+                            ChosenDegree = "M";
+                            String test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName);
+                            JOptionPane.showMessageDialog(c, test);
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(
+                                null, "Please Enter 7 digits student ID");
                     }
+
 
                 }
 
@@ -263,14 +309,11 @@ class Panels extends JFrame {
             }
         });
 
-        FindStudent.addActionListener(new ActionListener()
-        {
+        FindStudent.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e) {
                 String StudentID = StudentIDTxt.getText();
-                if (StudentIDTxt.getText().isEmpty())
-                {
+                if (StudentIDTxt.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(
                             null, "Please Enter Student Number");
                 } else {
@@ -287,22 +330,31 @@ class Panels extends JFrame {
             }
         });
 
-        AddTopicResult.addActionListener(new ActionListener()
-        {
+        AddTopicResult.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e) {
                 String Mark = MarkTXT.getText();
                 String Grade = GradeDropDown.getSelectedItem().toString();
                 String TopicCode = TopicCodeTXT.getText();
                 String StudentID = StudentIDTxt.getText();
                 String result = "R," + StudentID + "," + TopicCode + "," + Grade + "," + Mark;
                 String result1 = "No Added";
-                if (studentDatabase.addResult(result, StudentID) == true) {
-                    result1 = "Added";
+                if (Mark.length() == 2 || Mark.length() == 1 || Mark.equals("100")) {
+                    if (TopicCode.length() == 8) {
+                        if (studentDatabase.addResult(result, StudentID) == true) {
+                            result1 = "Added";
+                        }
+                        JOptionPane.showMessageDialog(c, result1
+                        );
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(
+                                null, "Please Enter a valid 8 digit TopicCode");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(
+                            null, "Please Enter a valid Mark");
                 }
-                JOptionPane.showMessageDialog(c, result1
-                );
             }
         });
         FindTopicResult.addActionListener(new ActionListener() {

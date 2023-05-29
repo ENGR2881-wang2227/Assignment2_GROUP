@@ -5,9 +5,8 @@ public class MStudent extends Student{
         super(input);
     }
     public void addPrizes(String name, String template,String topic){
-        if (prizes.size()<10)
-        prizes.add(new Prize(name,template,topic));
-    }
+        if (prizes.size()<1){
+            prizes.add(new Prize(name,template,topic));}}
     @Override
     public String show(){
         String prize = "";

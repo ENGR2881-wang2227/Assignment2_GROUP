@@ -1,14 +1,20 @@
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MStudentTest {
 
-    @Test
-    void addPrizes() {
-    }
-
-    @Test
-    void show() {
+    @ParameterizedTest
+    @CsvFileSource(resources = "/MStudentData.csv", numLinesToSkip = 3)
+    void addPrizesTest(String name, String template, String topic) {
+        MStudent test = new MStudent("M 1 A B");
+        test.addPrizes(name, template, topic);
+        String output = test.show();
+        String expected = "A B (Student ID: 1)\n";
+        expected += "Degree: M";
+        expected += "Name: " + name + " Template: " + template + " Topics Required: " + topic + "\n";
+        assertEquals(expected, output);
     }
 }

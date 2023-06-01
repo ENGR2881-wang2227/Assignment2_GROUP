@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class TopicTest {
 
     @ParameterizedTest
-    @CsvFileSource()
+    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 1)
     void ConstructorFailTest(String Code, String Grade, String Mark){
             //assertThrows(class, () -> {
 
@@ -15,7 +15,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource()
+    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 1)
     void ConstructorTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         String output = test.show();
@@ -23,7 +23,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource()
+    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 2)
     void GetCodeTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         String output = test.getCode();
@@ -31,7 +31,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource()
+    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 3)
     void GetGradeTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         String output = test.getGrade();
@@ -39,7 +39,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource()
+    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 4)
     void GetMarkTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         int output = test.getMark();

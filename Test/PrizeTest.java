@@ -1,22 +1,41 @@
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PrizeTest {
 
-    @Test
-    void getName() {
+    @ParameterizedTest
+    @CsvFileSource(resources = "/prizeData.csv", numLinesToSkip = 1)
+    void getNameTest(String name, String template, String topicsRequired) {
+        Prize test = new Prize(name,template,topicsRequired);
+        String output = test.getName();
+        assertEquals(name,output);
     }
 
-    @Test
-    void getTemplate() {
+    @ParameterizedTest
+    @CsvFileSource(resources = "/prizeData.csv", numLinesToSkip = 2)
+    void getTemplateTest(String name, String template, String topicsRequired) {
+        Prize test = new Prize(name,template,topicsRequired);
+        String output = test.getTemplate();
+        assertEquals(template,output);
     }
 
-    @Test
-    void getTopicsRequired() {
+    @ParameterizedTest
+    @CsvFileSource(resources = "/prizeData.csv", numLinesToSkip = 3)
+    void getTopicsRequiredTest(String name, String template, String topicsRequired) {
+        Prize test = new Prize(name,template,topicsRequired);
+        String output = test.getTopicsRequired();
+        assertEquals(topicsRequired,output);
     }
 
-    @Test
-    void show() {
+    @ParameterizedTest
+    @CsvFileSource(resources = "/prizeData.csv", numLinesToSkip = 4)
+    void showTest(String name, String template, String topicsRequired) {
+        Prize Test = new Prize(name,template,topicsRequired);
+        String output = Test.show();
+        String expected = "Name: " + name + " Template: " + template + " Topics Required: " + topicsRequired + "\n";
+        assertEquals(expected,output);
     }
 }

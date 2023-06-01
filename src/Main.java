@@ -69,7 +69,8 @@ public class Main
         System.out.println(studentDataBase.addResult("R,9800123,COMP10025,DN,77","9800123"));
         System.out.println(studentDataBase.addResult("R,9800123,COMP10026,DN,77","9800123"));
         System.out.println(studentDataBase.addResult("R,9800123,COMP10027,DN,77","9800123"));
-        System.out.println(studentDataBase.addResult("R,9800123,COMP10028,DN,77","9800123"));System.out.println(studentDataBase.addResult("R,9800123,COMP1001,DN,77","9800123"));
+        System.out.println(studentDataBase.addResult("R,9800123,COMP10028,DN,77","9800123"));
+        System.out.println(studentDataBase.addResult("R,9800123,COMP1001,DN,77","9800123"));
 
 
 

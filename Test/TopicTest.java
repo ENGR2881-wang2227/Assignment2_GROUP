@@ -6,16 +6,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TopicTest {
 
-    @ParameterizedTest
-    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 1)
+    /*@ParameterizedTest
+    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 1)
     void ConstructorFailTest(String Code, String Grade, String Mark){
             //assertThrows(class, () -> {
 
             //});
-    }
+    }*/
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 1)
+    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 11)
     void ConstructorTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         String output = test.show();
@@ -23,7 +23,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 2)
+    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 21)
     void GetCodeTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         String output = test.getCode();
@@ -31,7 +31,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 3)
+    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 31)
     void GetGradeTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         String output = test.getGrade();
@@ -39,7 +39,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/topicData.csv", numLinesToSkip = 4)
+    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 41)
     void GetMarkTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         int output = test.getMark();

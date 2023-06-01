@@ -1,12 +1,16 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.ValueSource;
+
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class StudentTest {
 
-    @Test
+    @ParameterizedTest
+    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
     void setDegree(String command,String degree) {
         Student test = new Student(command);
         test.setDegree(degree);
@@ -14,7 +18,8 @@ class StudentTest {
         assertEquals(degree,output);
     }
 
-    @Test
+    @ParameterizedTest
+    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 11)
     void getLastName(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
@@ -22,7 +27,8 @@ class StudentTest {
         assertEquals(points[3],output);
     }
 
-    @Test
+    @ParameterizedTest
+    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 21)
     void getFirstName(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
@@ -30,7 +36,8 @@ class StudentTest {
         assertEquals(points[2],output);
     }
 
-    @Test
+    @ParameterizedTest
+    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 31)
     void getStudentID(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
@@ -38,7 +45,8 @@ class StudentTest {
         assertEquals(points[1],output);
     }
 
-    @Test
+    @ParameterizedTest
+    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 41)
     void getDegree(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
@@ -58,11 +66,19 @@ class StudentTest {
     }
 
     @Test
-    void getResult() {
-    }
-
-    @Test
     void addResult() {
+        Student test = new Student("S,9800123,Smith,John Paul");
+        for (int i=0;i<10;i++){
+            test.addResult(i+","+i+","+i);
+        }
+        ArrayList<Topic> output = test.getResult();
+        String out = "";
+        String expected = "";
+        for (int i=0;i<output.size();i++){
+            out += output.get(i).show()+"|";
+            expected += i+","+i+","+i+"|";
+        }
+        assertEquals(expected,out);
     }
 
     @Test
@@ -76,5 +92,6 @@ class StudentTest {
 
     @Test
     void show() {
+
     }
 }

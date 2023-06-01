@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PrizeTest {
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/prizeData.csv", numLinesToSkip = 1)
+    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 1)
     void getNameTest(String name, String template, String topicsRequired) {
         Prize test = new Prize(name,template,topicsRequired);
         String output = test.getName();
@@ -15,7 +15,7 @@ class PrizeTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/prizeData.csv", numLinesToSkip = 2)
+    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 21)
     void getTemplateTest(String name, String template, String topicsRequired) {
         Prize test = new Prize(name,template,topicsRequired);
         String output = test.getTemplate();
@@ -23,7 +23,7 @@ class PrizeTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/prizeData.csv", numLinesToSkip = 3)
+    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 31)
     void getTopicsRequiredTest(String name, String template, String topicsRequired) {
         Prize test = new Prize(name,template,topicsRequired);
         String output = test.getTopicsRequired();
@@ -31,7 +31,7 @@ class PrizeTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/prizeData.csv", numLinesToSkip = 4)
+    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 41)
     void showTest(String name, String template, String topicsRequired) {
         Prize Test = new Prize(name,template,topicsRequired);
         String output = Test.show();

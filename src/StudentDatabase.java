@@ -142,7 +142,7 @@ public class StudentDatabase {
                     }
                     case "R" -> {
                         if (command.length == 4 || command.length == 5) {
-                            addResult(command[1],data);
+                            addResult(data,command[1]);
                         } else {
                             throw new Exception("malformed result command");
                         }

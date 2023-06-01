@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -55,8 +56,11 @@ public class StudentDatabase {
         boolean b = false;
         for (int i = 0; i < database.size(); i++) {
             if (studentID.equals(database.get(i).getStudentID())&&database.get(i).resultSize()<24) {
-                database.get(i).addResult(result);
-                b = true;
+                if(database.get(i).checkResult(result) == true){
+                    database.get(i).addResult(result);
+                    b = true;
+                }
+
             }
         }
         return b;
@@ -64,7 +68,7 @@ public class StudentDatabase {
 
     public String findResults(String topic) {
         String results = "Result record for Topic: " + topic + "\n";
-        int average = 0;
+        double average = 0;
         int count = 0;
         for (int i = 0; i < database.size(); i++) {
             for (int j = 0; j < database.get(i).getResult().size(); j++) {
@@ -83,7 +87,9 @@ public class StudentDatabase {
         if(count==0){
             return "No result found";
         }
-        return results + "Average: " + average;
+        DecimalFormat decfor = new DecimalFormat("0.00");
+        return results + "Average: " + decfor.format(average);
+
     }
 
 
@@ -105,6 +111,7 @@ public class StudentDatabase {
         String output = "";
         if (database.size() != 0) {
             for (int i = 0; i < database.size(); i++) {
+                output += "Academic record for ";
                 output += database.get(i).show();
                 output += "\n";
             }

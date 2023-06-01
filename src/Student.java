@@ -55,13 +55,22 @@ public class Student {
             topicCount++;
         }
     }
+    public boolean checkResult(String input){
+        for(int i = 0; i<result.size();i++){
+            String[] list = input.split(",");
+            if(list[2].equals(result.get(i).getCode())){
+                return false;
+            }
+        }
+        return true;
+    }
 
     public int resultSize(){
         return result.size();
     }
     public String show() {
         String print1 = "";
-        print1 += firstName + " " + lastName + " (Student ID: " + studentID + ")\n";
+        print1 +=  lastName + " " + firstName + " (Student ID: " + studentID + ")\n";
         print1 += "Degree: " + getDegree();
         if (result.size() != 0)
         {

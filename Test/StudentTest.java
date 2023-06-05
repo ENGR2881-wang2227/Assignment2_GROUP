@@ -65,6 +65,61 @@ class StudentTest {
         assertEquals(num,output);
     }
 
+    //Testing an incorrect degree input (F is not a valid degree)
+    @Test
+    public void IncorrectDegreeTest() {
+        String testInput = "F,1000001,Student,Test";
+        assertThrows(IllegalArgumentException.class, () -> {
+            Student test = new Student(testInput);
+        });
+    }
+
+    //Testing a student ID of incorrect length (expecting an exception or message)
+    @Test
+    public void IncorrectStudentIDLengthTest() {
+        String testInput = "S,10001,Student,Test";
+        assertThrows(IllegalArgumentException.class, () -> {
+            Student test = new Student(testInput);
+        });
+    }
+
+    //Testing a student ID input that is not a number
+    @Test
+    public void IncorrectStudentIDFormatTest() {
+        String testInput = "S,StudentID,Student,Test";
+        assertThrows(IllegalArgumentException.class, () -> {
+            Student test = new Student(testInput);
+        });
+    }
+
+    //Testing a blank student ID input
+    @Test
+    public void BlankStudentIDTest() {
+        String testInput = "S,,Student,Test";
+        assertThrows(IllegalArgumentException.class, () -> {
+            Student test = new Student(testInput);
+        });
+    }
+
+    //Testing a Student input with too few elements
+    @Test
+    public void IncorrectInputFormatTest() {
+        String testInput = "S,1000001,Student";
+        assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+            Student test = new Student(testInput);
+        });
+    }
+
+    //Testing a Student input with a blank name
+    @Test
+    public void BlankNameTest() {
+        String testInput = "S,100001,Student,";
+        assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+            Student test = new Student(testInput);
+        });
+    }
+
+
     @Test
     void addResult() {
         Student test = new Student("S,9800123,Smith,John Paul");
@@ -90,8 +145,50 @@ class StudentTest {
         assertEquals(10,test.getTopicCount() + test.resultSize());
     }
 
+    //Testing result input with no mark
+    @Test
+    public void AddResultNoMarkTest() {
+        String testInput = "S,1000001,Student,Test";
+        String testResult = "R,1000001,AAAA1111,DN";
+        Student test = new Student(testInput);
+        test.addResult(testResult);
+        assertEquals("Test Student (Student ID: 1000001)\n" +
+                "Degree: Science\n" +
+                "Topic Code: AAAA1111, Grade: DN. \n", test.show());
+    }
+
+    //Testing two results for the same topic code
+    @Test
+    public void AddDuplicateResultsTest() {
+        String testInput = "S,1000001,Student,Test";
+        String testResult1 = "R,1000001,AAAA1111,DN,82";
+        String testResult2 = "R,1000001,AAAA1111,CR,67";
+        Student test = new Student(testInput);
+        test.addResult(testResult1);
+        assertThrows(IllegalArgumentException.class, () -> {
+            test.addResult(testResult2);
+        });
+    }
+
+    //Testing result input with too few arguments
+    @Test
+    public void AddIncorrectResultInput() {
+        String testInput = "S,1000001,Student,Test";
+        String testResult = "R,1000001,AAAA1111";
+        Student test = new Student(testInput);
+        assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+            test.addResult(testResult);
+        });
+    }
+
     @Test
     void show() {
-
+        String testInput = "S,1000001,Student,Test";
+        String testResult = "R,1000001,AAAA1111,DN,82";
+        Student test = new Student(testInput);
+        test.addResult(testResult);
+        assertEquals("Test Student (Student ID: 1000001)\n" +
+                "Degree: Science\n" +
+                "Topic Code: AAAA1111, Grade: DN, Mark: 82. \n", test.show());
     }
 }

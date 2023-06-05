@@ -19,7 +19,7 @@ class StudentTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 11)
+    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
     void getLastName(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
@@ -28,7 +28,7 @@ class StudentTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 21)
+    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
     void getFirstName(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
@@ -37,7 +37,7 @@ class StudentTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 31)
+    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
     void getStudentID(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
@@ -46,7 +46,7 @@ class StudentTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 41)
+    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
     void getDegree(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");

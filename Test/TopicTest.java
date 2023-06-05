@@ -15,7 +15,7 @@ class TopicTest {
     }*/
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 11)
+    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 1)
     void ConstructorTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         String output = test.show();
@@ -23,7 +23,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 21)
+    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 1)
     void GetCodeTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         String output = test.getCode();
@@ -31,7 +31,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 31)
+    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 1)
     void GetGradeTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         String output = test.getGrade();
@@ -39,7 +39,7 @@ class TopicTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 41)
+    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 1)
     void GetMarkTest(String Code, String Grade, int Mark){
         Topic test = new Topic(Code, Grade, Mark);
         int output = test.getMark();

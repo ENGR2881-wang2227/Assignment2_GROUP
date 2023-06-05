@@ -15,7 +15,7 @@ class PrizeTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 21)
+    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 1)
     void getTemplateTest(String name, String template, String topicsRequired) {
         Prize test = new Prize(name,template,topicsRequired);
         String output = test.getTemplate();
@@ -23,7 +23,7 @@ class PrizeTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 31)
+    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 1)
     void getTopicsRequiredTest(String name, String template, String topicsRequired) {
         Prize test = new Prize(name,template,topicsRequired);
         String output = test.getTopicsRequired();
@@ -31,7 +31,7 @@ class PrizeTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 41)
+    @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 1)
     void showTest(String name, String template, String topicsRequired) {
         Prize Test = new Prize(name,template,topicsRequired);
         String output = Test.show();

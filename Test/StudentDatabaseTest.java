@@ -107,7 +107,7 @@ class StudentDatabaseTest {
     void findStudent(String id) {
         StudentDatabase test = new StudentDatabase();
         for (int i=0;i<10;i++){
-            test.addStudent("S "+i+" A B");
+            test.addStudent("S," +i+",A,B");
         }
         Student output = test.findStudent(id);
         assertEquals(id,output.getStudentID());
@@ -117,7 +117,7 @@ class StudentDatabaseTest {
     void findVoid(){
         StudentDatabase test = new StudentDatabase();
         for (int i=0;i<10;i++){
-            test.addStudent("S "+i+" A B");
+            test.addStudent("S,"+i+",A,B");
         }
         Student output = test.findStudent("10");
         assertEquals(null,output);

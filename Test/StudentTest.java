@@ -20,7 +20,7 @@ class StudentTest {
 
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
-    void getLastName(String command) {
+    public void getLastName(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
         String output = test.getLastName();
@@ -29,7 +29,7 @@ class StudentTest {
 
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
-    void getFirstName(String command) {
+    public void getFirstName(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
         String output = test.getLastName();
@@ -38,7 +38,7 @@ class StudentTest {
 
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
-    void getStudentID(String command) {
+    public void getStudentID(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
         String output = test.getLastName();
@@ -47,7 +47,7 @@ class StudentTest {
 
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
-    void getDegree(String command) {
+    public void getDegree(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
         String output = test.getLastName();
@@ -56,10 +56,10 @@ class StudentTest {
 
     @ParameterizedTest
     @ValueSource(ints = {1,5,10,20})
-    void getTopicCount(int num) {
+    public void getTopicCount(int num) {
         Student test = new Student("S,9800123,Smith,John Paul");
         for (int i=0;i<num;i++){
-            test.addResult("1,1,1");
+            test.addResult("R,1,1,1,1");
         }
         int output = test.getTopicCount();
         assertEquals(num,output);
@@ -121,7 +121,7 @@ class StudentTest {
 
 
     @Test
-    void addResult() {
+    public void addResult() {
         Student test = new Student("S,9800123,Smith,John Paul");
         for (int i=0;i<10;i++){
             test.addResult(i+","+i+","+i);
@@ -137,7 +137,7 @@ class StudentTest {
     }
 
     @Test
-    void resultSize() {
+    public void resultSize() {
         Student test = new Student("S,9800123,Smith,John Paul");
         for (int i=0;i<5;i++){
             test.addResult("1,1,1");
@@ -182,7 +182,7 @@ class StudentTest {
     }
 
     @Test
-    void show() {
+    public void show() {
         String testInput = "S,1000001,Student,Test";
         String testResult = "R,1000001,AAAA1111,DN,82";
         Student test = new Student(testInput);

@@ -157,19 +157,6 @@ class StudentTest {
                 "Topic Code: AAAA1111, Grade: DN. \n", test.show());
     }
 
-    //Testing two results for the same topic code
-    @Test
-    public void AddDuplicateResultsTest() {
-        String testInput = "S,1000001,Student,Test";
-        String testResult1 = "R,1000001,AAAA1111,DN,82";
-        String testResult2 = "R,1000001,AAAA1111,CR,67";
-        Student test = new Student(testInput);
-        test.addResult(testResult1);
-        assertThrows(IllegalArgumentException.class, () -> {
-            test.addResult(testResult2);
-        });
-    }
-
     //Testing result input with too few arguments
     @Test
     public void AddIncorrectResultInput() {

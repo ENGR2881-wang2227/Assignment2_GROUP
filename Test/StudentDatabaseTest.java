@@ -42,7 +42,7 @@ class StudentDatabaseTest {
     @Test
     void addStudent() {
         StudentDatabase test = new StudentDatabase();
-        test.addStudent("S 1 A B");
+        test.addStudent("S,1,A,B");
         ArrayList<Student> db = test.getDb();
         String output = db.get(0).show();
         String expected = "A B (Student ID 1)\n S";
@@ -53,7 +53,7 @@ class StudentDatabaseTest {
     void addMultipleStudent() {
         StudentDatabase test = new StudentDatabase();
         for (int i=0;i<5;i++){
-            test.addStudent("S "+i+" A B");
+            test.addStudent("S,"+i+",A,B");
         }
         ArrayList<Student> db = test.getDb();
         int output = test.getDb().size();
@@ -68,8 +68,8 @@ class StudentDatabaseTest {
         assertAll(
                 () -> assertEquals("Science", test.getDegree()),
                 () -> assertEquals("1000001", test.getStudentID()),
-                () -> assertEquals("Student", test.getLastName()),
-                () -> assertEquals("Test", test.getFirstName())
+                () -> assertEquals("Student", test.getFirstName()),
+                () -> assertEquals("Test", test.getLastName())
         );
     }
 

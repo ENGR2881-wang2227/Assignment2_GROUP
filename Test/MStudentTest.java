@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MStudentTest {
 
     @ParameterizedTest
-    @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
+    @CsvFileSource(resources = "TestingData/StudentDataP.csv", numLinesToSkip = 1)
     void addPrizesTest(String name, String template, String topic) {
         MStudent test = new MStudent("M 1 A B");
         test.addPrizes(name, template, topic);

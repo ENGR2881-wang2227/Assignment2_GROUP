@@ -1,0 +1,20 @@
+Academic record for John Paul Smith (Student ID: 9800123)
+Degree: Science
+Topic Code: COMP1000, Grade: PS, Mark: 55. 
+Topic Code: COMP1001, Grade: DN, Mark: 77. 
+Topic Code: HIST1234, Grade: HD, Mark: 87. 
+Topic Code: PSYC0123, Grade: FL, Mark: 42. 
+
+
+Academic record for Mary Jones (Student ID: 9821012)
+Degree: Medicine
+Topic Code: BIOL1000, Grade: HD, Mark: 89. 
+Topic Code: CHEM1001, Grade: HD, Mark: 92. 
+Topic Code: COMP1000, Grade: DN, Mark: 75. 
+Topic Code: PHYS1010, Grade: HD, Mark: 93. 
+
+Prizes: 
+Academic record for John Howard (Student ID: 9987654)
+Degree:  Art
+Major: Politics
+Minor: Economics

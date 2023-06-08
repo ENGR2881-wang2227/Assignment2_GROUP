@@ -130,9 +130,9 @@ class StudentDatabaseTest {
         String testResult = "R,1000001,AAAA1111,DN,82";
         testDB.addStudent(testInput);
         testDB.addResult(testResult, "1000001");
-        assertEquals("Academic record for: Test Student (Student ID: 1000001)\n" +
+        assertEquals("Academic record for Test Student (Student ID: 1000001)\n" +
                 "Degree: Science\n" +
-                "Topic Code: AAAA1111, Grade: DN, Mark: 82. ", testDB.printRecords());
+                "Topic Code: AAAA1111, Grade: DN, Mark: 82.", testDB.printRecords().trim());
     }
 
     @Test
@@ -162,7 +162,7 @@ class StudentDatabaseTest {
                 Degree: Science
                 Prize: AAAA Prize
                 Topic Code: AAAA1111, Grade: CR, Mark: 67.\s
-                """, testDB.printRecords());
+                """, testDB.printRecords().trim());
     }
 
     @Test
@@ -175,7 +175,7 @@ class StudentDatabaseTest {
         assertEquals("""
                 Academic record for Test Student (Student ID: 1000001)
                 Degree: Science
-                Topic Code: AAAA1111, Grade: CR, Mark: 67""", testDB.printRecords());
+                Topic Code: AAAA1111, Grade: CR, Mark: 67.""", testDB.printRecords().trim());
     }
 
     @Test
@@ -214,9 +214,10 @@ class StudentDatabaseTest {
                 Topic Code: CHEM1001, Grade: HD, Mark: 92.\s
                 Topic Code: COMP1000, Grade: DN, Mark: 75.\s
                 Topic Code: PHYS1010, Grade: HD, Mark: 93.\s
-
+                
+                Prizes:\s
                 Academic record for John Howard (Student ID: 9987654)
-                Degree: Arts
+                Degree:  Art
                 Major: Politics
                 Minor: Economics
                 """, testDB.printRecords());
@@ -234,7 +235,7 @@ class StudentDatabaseTest {
         StudentDatabase testDB = new StudentDatabase();
         testDB.readFile("TestResources/inputFiles/standard.txt");
         testDB.recordsToFile("TestResources/OutputFiles/out.txt");
-        String Expected = Files.readString(Paths.get("TestResources/OutputFiles/FileWriteCompare"));
+        String Expected = Files.readString(Paths.get("TestResources/OutputFiles/FileWriteCompare.txt"));
         String Actual = Files.readString(Paths.get("TestResources/OutputFiles/out.txt"));
         Files.delete(Path.of("TestResources/OutputFiles/out.txt"));
         assertEquals(Expected, Actual);

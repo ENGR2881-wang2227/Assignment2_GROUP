@@ -4,6 +4,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,10 +13,14 @@ class StudentTest {
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
     void setDegree(String command,String degree) {
+        HashMap<String,String> expected = new HashMap<>();
+        expected.put("S","Science");
+        expected.put("A","Arts");
+        expected.put("M","Medicine");
         Student test = new Student(command);
         test.setDegree(degree);
         String output = test.getDegree();
-        assertEquals(degree,output);
+        assertEquals(expected.get(degree),output);
     }
 
     @ParameterizedTest
@@ -32,7 +37,7 @@ class StudentTest {
     public void getFirstName(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
-        String output = test.getLastName();
+        String output = test.getFirstName();
         assertEquals(points[2],output);
     }
 
@@ -41,17 +46,21 @@ class StudentTest {
     public void getStudentID(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
-        String output = test.getLastName();
+        String output = test.getStudentID();
         assertEquals(points[1],output);
     }
 
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
     public void getDegree(String command) {
+        HashMap<String,String> expected = new HashMap<>();
+        expected.put("S","Science");
+        expected.put("A","Arts");
+        expected.put("M","Medicine");
         Student test = new Student(command);
         String[] points = command.split(",");
-        String output = test.getLastName();
-        assertEquals(points[0],output);
+        String output = test.getDegree();
+        assertEquals(expected.get(points[0]),output);
     }
 
     @ParameterizedTest
@@ -124,14 +133,14 @@ class StudentTest {
     public void addResult() {
         Student test = new Student("S,9800123,Smith,John Paul");
         for (int i=0;i<10;i++){
-            test.addResult(i+","+i+","+i);
+            test.addResult("1,1,"+i+","+i+","+i);
         }
         ArrayList<Topic> output = test.getResult();
         String out = "";
         String expected = "";
         for (int i=0;i<output.size();i++){
             out += output.get(i).show()+"|";
-            expected += i+","+i+","+i+"|";
+            expected += i+" "+i+" "+i+"|";
         }
         assertEquals(expected,out);
     }
@@ -140,7 +149,7 @@ class StudentTest {
     public void resultSize() {
         Student test = new Student("S,9800123,Smith,John Paul");
         for (int i=0;i<5;i++){
-            test.addResult("1,1,1");
+            test.addResult("1,1,1,1,1");
         }
         assertEquals(10,test.getTopicCount() + test.resultSize());
     }

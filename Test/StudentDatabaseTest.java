@@ -132,7 +132,7 @@ class StudentDatabaseTest {
         testDB.addResult(testResult, "1000001");
         assertEquals("Academic record for Test Student (Student ID: 1000001)\n" +
                 "Degree: Science\n" +
-                "Topic Code: AAAA1111, Grade: DN, Mark: 82.", testDB.printRecords().trim());
+                "Topic Code: AAAA1111, Grade: DN, Mark: 82.", testDB.printRecords());
     }
 
     @Test
@@ -202,25 +202,22 @@ class StudentDatabaseTest {
         assertEquals("""
                 Academic record for John Paul Smith (Student ID: 9800123)
                 Degree: Science
-                Topic Code: COMP1000, Grade: PS, Mark: 55.\s
-                Topic Code: COMP1001, Grade: DN, Mark: 77.\s
-                Topic Code: HIST1234, Grade: HD, Mark: 87.\s
-                Topic Code: PSYC0123, Grade: FL, Mark: 42.\s
-
+                Topic Code: COMP1000, Grade: PS, Mark: 55.
+                Topic Code: COMP1001, Grade: DN, Mark: 77.
+                Topic Code: HIST1234, Grade: HD, Mark: 87.
+                Topic Code: PSYC0123, Grade: FL, Mark: 42.
 
                 Academic record for Mary Jones (Student ID: 9821012)
                 Degree: Medicine
-                Topic Code: BIOL1000, Grade: HD, Mark: 89.\s
-                Topic Code: CHEM1001, Grade: HD, Mark: 92.\s
-                Topic Code: COMP1000, Grade: DN, Mark: 75.\s
-                Topic Code: PHYS1010, Grade: HD, Mark: 93.\s
+                Topic Code: BIOL1000, Grade: HD, Mark: 89.
+                Topic Code: CHEM1001, Grade: HD, Mark: 92.
+                Topic Code: COMP1000, Grade: DN, Mark: 75.
+                Topic Code: PHYS1010, Grade: HD, Mark: 93.
                 
-                Prizes:\s
                 Academic record for John Howard (Student ID: 9987654)
                 Degree:  Art
                 Major: Politics
-                Minor: Economics
-                """, testDB.printRecords());
+                Minor: Economics""", testDB.printRecords());
     }
 
     @Test

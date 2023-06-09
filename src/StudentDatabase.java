@@ -113,12 +113,12 @@ public class StudentDatabase {
             for (int i = 0; i < database.size(); i++) {
                 output += "Academic record for ";
                 output += database.get(i).show();
-                output += "\n";
+                output += "\n\n";
             }
         } else {
             output = "no records";
         }
-        return output;
+        return output.trim();
     }
 
     public void clearRecords() {

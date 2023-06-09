@@ -65,6 +65,19 @@ class StudentTest {
         assertEquals(num,output);
     }
 
+    //Test Student Constructor
+    @Test
+    public void StudentConstructorTest() {
+        String testInput = "S,1000001,Student,Test";
+        Student test = new Student(testInput);
+        assertAll(
+                () -> assertEquals("Science", test.getDegree()),
+                () -> assertEquals("1000001", test.getStudentID()),
+                () -> assertEquals("Student", test.getFirstName()),
+                () -> assertEquals("Test", test.getLastName())
+        );
+    }
+
     //Testing an incorrect degree input (F is not a valid degree)
     @Test
     public void IncorrectDegreeTest() {
@@ -154,7 +167,7 @@ class StudentTest {
         test.addResult(testResult);
         assertEquals("Test Student (Student ID: 1000001)\n" +
                 "Degree: Science\n" +
-                "Topic Code: AAAA1111, Grade: DN. \n", test.show());
+                "Topic Code: AAAA1111, Grade: DN, Mark: 75.", test.show());
     }
 
     //Testing result input with too few arguments
@@ -176,6 +189,6 @@ class StudentTest {
         test.addResult(testResult);
         assertEquals("Test Student (Student ID: 1000001)\n" +
                 "Degree: Science\n" +
-                "Topic Code: AAAA1111, Grade: DN, Mark: 82. \n", test.show());
+                "Topic Code: AAAA1111, Grade: DN, Mark: 82.", test.show());
     }
 }

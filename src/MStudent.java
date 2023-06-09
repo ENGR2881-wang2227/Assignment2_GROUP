@@ -10,9 +10,15 @@ public class MStudent extends Student{
     @Override
     public String show(){
         String prize = "";
-        if(prizes.size()!=0){for(int i = 0; i<prizes.size() ;i++){prize+= prizes.get(i).show();}
+        if(prizes.size()!=0){
+            for(int i = 0; i<prizes.size() ;i++) {
+                prize+= prizes.get(i).show();
+            }return super.show() + "\nPrizes: " + prize;
+
+        } else {
+            return super.show();
         }
-        return super.show() + "Prizes: " + prize;
+
     }
 
 

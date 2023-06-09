@@ -337,10 +337,12 @@ class Panels extends JFrame {
                 String Grade = GradeDropDown.getSelectedItem().toString();
                 String TopicCode = TopicCodeTXT.getText();
                 String StudentID = StudentIDTxt.getText();
-                String result = "R," + StudentID + "," + TopicCode + "," + Grade + "," + Mark;
+                String result = Mark.isEmpty() ?
+                        "R," + StudentID + "," + TopicCode + "," + Grade :
+                        "R," + StudentID + "," + TopicCode + "," + Grade + "," + Mark;
                 String result1 = "No Added";
-                if (Mark.length() == 2 || Mark.length() == 1 || Mark.equals("100")) {
-                    if (TopicCode.length() == 8) {
+                if (Mark.length() == 2 || Mark.length() == 1 || Mark.equals("100") || Mark.isEmpty()) {
+                    if (TopicCode.matches("^[A-Z]{4}\\d{4}$")) {
                         if (studentDatabase.addResult(result, StudentID) == true) {
                             result1 = "Added";
                         }

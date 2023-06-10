@@ -37,7 +37,7 @@ public class Student {
 
     public String getDegree() {
         if(degree.equals("S")){return "Science";}
-        else if(degree.equals("A")){ return " Art";}
+        else if(degree.equals("A")){ return "Art";}
         else if(degree.equals("M")){ return "Medicine";}
         else
             return degree;
@@ -49,6 +49,15 @@ public class Student {
 
     public ArrayList<Topic> getResult() {
         return result;
+    }
+
+    public Topic getTopicResult(String TopicCode) {
+        for (Topic t : result) {
+            if (t.getCode().matches(TopicCode)){
+                return t;
+            }
+        }
+        return null;
     }
 
     public void addResult(String input)
@@ -84,10 +93,16 @@ public class Student {
     public int resultSize(){
         return result.size();
     }
-    public String show() {
+
+    public String showName() {
         String print1 = "";
         print1 +=  lastName + " " + firstName + " (Student ID: " + studentID + ")\n";
         print1 += "Degree: " + getDegree();
+        return print1;
+    }
+
+    public String showResults() {
+        String print1 = "";
         if (result.size() != 0)
         {
             print1+="\n";
@@ -95,6 +110,32 @@ public class Student {
             {
                 print1 += "Topic Code: "+result.get(i).getCode() + ", Grade: " + result.get(i).getGrade() + ", Mark: " + result.get(i).getMark() + ".\n";
             }
+        }
+        print1 += "\n";
+        return print1.trim();
+    }
+
+    public String showResults1() {
+        String print1 = "";
+        if (result.size() != 0)
+        {
+            print1+="\n";
+            for (int i = 0; i < result.size(); i++)
+            {
+                print1 += result.get(i).show() + "\n";
+            }
+        }
+        print1 += "\n";
+        return print1.trim();
+    }
+    public String show() {
+        String print1 = "";
+        print1 +=  lastName + " " + firstName + " (Student ID: " + studentID + ")\n";
+        print1 += "Degree: " + getDegree();
+        if (result.size() != 0)
+        {
+            print1+="\n";
+            print1+= showResults1();
         }
         print1 += "\n";
         return print1.trim();

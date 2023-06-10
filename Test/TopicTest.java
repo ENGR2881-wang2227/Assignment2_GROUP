@@ -6,6 +6,22 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TopicTest {
 
+    @Test
+    public void TopicConstructorTest() {
+        Topic test = new Topic("TEST1000", "CR", 69);
+        assertAll(
+                () -> assertEquals("TEST1000", test.getCode()),
+                () -> assertEquals("CR", test.getGrade()),
+                () -> assertEquals(69, test.getMark())
+        );
+    }
+
+    @Test
+    void TopicShowTest() {
+        Topic test = new Topic("TEST1000", "CR", 69);
+        assertEquals("TEST1000 CR 69", test.show());
+    }
+
     /*@ParameterizedTest
     @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 1)
     void ConstructorFailTest(String Code, String Grade, String Mark){

@@ -37,6 +37,8 @@ class StudentDatabaseTest {
 
     @Test
     void getDb() {
+        StudentDatabase testDB = new StudentDatabase();
+        assertEquals(new ArrayList<Student>(), testDB.getDb());
     }
 
     @Test
@@ -62,15 +64,10 @@ class StudentDatabaseTest {
 
     //Test Student Constructor
     @Test
-    public void StudentConstructorTest() {
-        String testInput = "S,1000001,Student,Test";
-        Student test = new Student(testInput);
-        assertAll(
-                () -> assertEquals("Science", test.getDegree()),
-                () -> assertEquals("1000001", test.getStudentID()),
-                () -> assertEquals("Student", test.getFirstName()),
-                () -> assertEquals("Test", test.getLastName())
-        );
+    public void AddStudentTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput1 = "S,1000001,Student,Test";
+        assertEquals("Done", testDB.addStudent(testInput1));
     }
 
     //Testing the addition of an existing student
@@ -124,6 +121,33 @@ class StudentDatabaseTest {
     }
 
     @Test
+    void FindStudentTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput1 = "S,1000001,Student,Test";
+        testDB.addStudent(testInput1);
+        assertEquals("Student", testDB.findStudent("1000001").getFirstName());
+    }
+
+    @Test
+    void FindMissingStudentTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        assertEquals(null, testDB.findStudent("1000001"));
+    }
+
+    @Test
+    void FindMultipleStudentTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput1 = "S,1000001,Student1,Test1";
+        String testInput2 = "M,1000002,Student2,Test2";
+        testDB.addStudent(testInput1);
+        testDB.addStudent(testInput2);
+        assertAll(
+                () -> assertEquals("Student2", testDB.findStudent("1000002").getFirstName()),
+                () -> assertEquals("Student1", testDB.findStudent("1000001").getFirstName())
+        );
+    }
+
+    @Test
     void addResult() {
         StudentDatabase testDB = new StudentDatabase();
         String testInput = "S,1000001,Student,Test";
@@ -132,7 +156,7 @@ class StudentDatabaseTest {
         testDB.addResult(testResult, "1000001");
         assertEquals("Academic record for Test Student (Student ID: 1000001)\n" +
                 "Degree: Science\n" +
-                "Topic Code: AAAA1111, Grade: DN, Mark: 82.", testDB.printRecords());
+                "AAAA1111 DN 82", testDB.printRecords());
     }
 
     @Test
@@ -149,20 +173,158 @@ class StudentDatabaseTest {
     }
 
     @Test
-    void addRewards() {
+    void AddPrizeTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput = "P,Test Prize,TEST0001,1";
+        assertTrue(testDB.addPrize(testInput));
+    }
+
+    @Test
+    void AddExistingPrizeTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput = "P,Test Prize,TEST0001,1";
+        testDB.addPrize(testInput);
+        assertFalse(testDB.addPrize(testInput));
+    }
+
+    @Test
+    void AwardPrizeTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput = "M,1000001,Student,Test";
+        String testResult = "R,1000001,BIOL10001,DN,82";
+        testDB.addStudent(testInput);
+        testDB.addResult(testResult, "1000001");
+        Prize testP = new Prize("BIOL Prize1", "BIOL", "1");
+        assertTrue(testDB.awardPrize(testP));
+    }
+
+    @Test
+    void AwardPrizeRequirementNotMetTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput = "M,1000001,Student,Test";
+        String testResult = "R,1000001,BIOL10001,DN,82";
+        testDB.addStudent(testInput);
+        testDB.addResult(testResult, "1000001");
+        Prize testP = new Prize("BIOL Prize1", "BIOL", "2");
+        assertFalse(testDB.awardPrize(testP));
+    }
+
+    @Test
+    void AwardPrizeOutputTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput = "M,1000001,Student,Test";
+        String testResult = "R,1000001,BIOL10001,DN,82";
+        testDB.addStudent(testInput);
+        testDB.addResult(testResult, "1000001");
+        Prize testP = new Prize("BIOL Prize1", "BIOL", "1");
+        testDB.awardPrize(testP);
+        assertEquals("Academic record for Test Student (Student ID: 1000001)\n" +
+                "Degree: Medicine\n" +
+                "Prize: BIOL Prize1\n" +
+                "BIOL10001 DN 82", testDB.printRecords());
+    }
+
+    @Test
+    void AddRewardsTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput = "M,1000001,Student,Test";
+        String testResult = "R,1000001,BIOL10001,DN,82";
+        String testReward = "1000001,Test Prize,BIOL,1";
+        testDB.addStudent(testInput);
+        testDB.addResult(testResult, "1000001");
+        assertTrue(testDB.addRewards(testReward));
+    }
+
+    @Test
+    void AddRewardsForScienceTest() {
         StudentDatabase testDB = new StudentDatabase();
         String testInput = "S,1000001,Student,Test";
+        String testResult = "R,1000001,BIOL10001,DN,82";
+        String testReward = "1000001,Test Prize,BIOL,1";
+        testDB.addStudent(testInput);
+        testDB.addResult(testResult, "1000001");
+        assertFalse(testDB.addRewards(testReward));
+    }
+
+    @Test
+    void addRewardsOutputTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput = "M,1000001,Student,Test";
         String testResult = "R,1000001,AAAA1111,CR,67";
-        String testPrize = "P,AAAA Prize,AAAA,1";
+        String testPrize = "1000001,AAAA Prize,AAAA,1";
         testDB.addStudent(testInput);
         testDB.addResult(testResult,"1000001");
-        testDB.addRewards(testPrize);
+        System.out.println(testDB.addRewards(testPrize));
         assertEquals("""
                 Academic record for Test Student (Student ID: 1000001)
-                Degree: Science
+                Degree: Medicine
                 Prize: AAAA Prize
-                Topic Code: AAAA1111, Grade: CR, Mark: 67.\s
-                """, testDB.printRecords().trim());
+                AAAA1111 CR 67""", testDB.printRecords().trim());
+    }
+
+    @Test
+    void AwardPrizesTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput1 = "M,1000001,Student1,Test1";
+        String testInput2 = "M,1000002,Student2,Test2";
+        String testResult1 = "R,1000001,TEST1001,CR,67";
+        String testResult2 = "R,1000001,TEST1002,DN,82";
+        String testResult3 = "R,1000002,TEST1001,PS,50";
+        String testResult4 = "R,1000002,TEST1002,PS,55";
+        String testResult5 = "R,1000002,TEST1003,PS,57";
+        String testPrize1 = "P,Test Prize,TEST,1";
+        String testPrize2 = "P,Test Prize1,TEST,2";
+        String testPrize3 = "P,Test Prize1,TEST,3";
+        testDB.addStudent(testInput1);
+        testDB.addStudent(testInput2);
+        testDB.addResult(testResult1, "1000001");
+        testDB.addResult(testResult2, "1000001");
+        testDB.addResult(testResult3, "1000002");
+        testDB.addResult(testResult4, "1000002");
+        testDB.addResult(testResult5, "1000002");
+        testDB.addPrize(testPrize1);
+        testDB.addPrize(testPrize2);
+        testDB.addPrize(testPrize3);
+        assertTrue(testDB.awardPrizes());
+    }
+
+    @Test
+    void AwardPrizesOutputTest() {
+        StudentDatabase testDB = new StudentDatabase();
+        String testInput1 = "M,1000001,Student1,Test1";
+        String testInput2 = "M,1000002,Student2,Test2";
+        String testResult1 = "R,1000001,TEST1001,CR,67";
+        String testResult2 = "R,1000001,TEST1002,DN,82";
+        String testResult3 = "R,1000002,TEST1001,PS,50";
+        String testResult4 = "R,1000002,TEST1002,PS,55";
+        String testResult5 = "R,1000002,TEST1003,PS,57";
+        String testPrize1 = "P,Test Prize,TEST,1";
+        String testPrize2 = "P,Test Prize1,TEST,2";
+        String testPrize3 = "P,Test Prize2,TEST,3";
+        testDB.addStudent(testInput1);
+        testDB.addStudent(testInput2);
+        testDB.addResult(testResult1, "1000001");
+        testDB.addResult(testResult2, "1000001");
+        testDB.addResult(testResult3, "1000002");
+        testDB.addResult(testResult4, "1000002");
+        testDB.addResult(testResult5, "1000002");
+        testDB.addPrize(testPrize1);
+        testDB.addPrize(testPrize2);
+        testDB.addPrize(testPrize3);
+        testDB.awardPrizes();
+        assertEquals("Academic record for Test1 Student1 (Student ID: 1000001)\n" +
+                "Degree: Medicine\n" +
+                "Prize: Test Prize\n" +
+                "Prize: Test Prize1\n" +
+                "TEST1001 CR 67\n" +
+                "TEST1002 DN 82\n" +
+                "\n" +
+                "Academic record for Test2 Student2 (Student ID: 1000002)\n" +
+                "Degree: Medicine\n" +
+                "Prize: Test Prize2\n" +
+                "TEST1001 PS 50\n" +
+                "TEST1002 PS 55\n" +
+                "TEST1003 PS 57", testDB.printRecords());
     }
 
     @Test
@@ -175,7 +337,7 @@ class StudentDatabaseTest {
         assertEquals("""
                 Academic record for Test Student (Student ID: 1000001)
                 Degree: Science
-                Topic Code: AAAA1111, Grade: CR, Mark: 67.""", testDB.printRecords().trim());
+                AAAA1111 CR 67""", testDB.printRecords().trim());
     }
 
     @Test
@@ -196,28 +358,44 @@ class StudentDatabaseTest {
     }
 
     @Test
+    void clearEmptyRecords() {
+        StudentDatabase testDB = new StudentDatabase();
+        testDB.clearRecords();
+        assertEquals("no records", testDB.printRecords());
+    }
+
+    @Test
     void readFile() {
         StudentDatabase testDB = new StudentDatabase();
         testDB.readFile("TestResources/inputFiles/standard.txt");
         assertEquals("""
                 Academic record for John Paul Smith (Student ID: 9800123)
                 Degree: Science
-                Topic Code: COMP1000, Grade: PS, Mark: 55.
-                Topic Code: COMP1001, Grade: DN, Mark: 77.
-                Topic Code: HIST1234, Grade: HD, Mark: 87.
-                Topic Code: PSYC0123, Grade: FL, Mark: 42.
-
+                COMP1000 PS 55
+                COMP1001 DN 77
+                HIST1234 HD 87
+                PSYC0123 FL 42
+                
                 Academic record for Mary Jones (Student ID: 9821012)
                 Degree: Medicine
-                Topic Code: BIOL1000, Grade: HD, Mark: 89.
-                Topic Code: CHEM1001, Grade: HD, Mark: 92.
-                Topic Code: COMP1000, Grade: DN, Mark: 75.
-                Topic Code: PHYS1010, Grade: HD, Mark: 93.
+                Prize: Chemistry Prize 1998
+                BIOL1000 HD 89
+                CHEM1001 HD 92
+                COMP1000 DN 75
+                PHYS1010 HD 93
                 
                 Academic record for John Howard (Student ID: 9987654)
-                Degree:  Art
+                Degree: Art
                 Major: Politics
                 Minor: Economics""", testDB.printRecords());
+    }
+
+    @Test
+    void readFileNullStudent() {
+        StudentDatabase testDB = new StudentDatabase();
+        assertThrows(RuntimeException.class, () -> {
+            testDB.readFile("TestResources/inputFiles/resultsForNullStudent.txt");
+        });
     }
 
     @Test
@@ -233,6 +411,28 @@ class StudentDatabaseTest {
         testDB.readFile("TestResources/inputFiles/standard.txt");
         testDB.recordsToFile("TestResources/OutputFiles/out.txt");
         String Expected = Files.readString(Paths.get("TestResources/OutputFiles/FileWriteCompare.txt"));
+        String Actual = Files.readString(Paths.get("TestResources/OutputFiles/out.txt"));
+        Files.delete(Path.of("TestResources/OutputFiles/out.txt"));
+        assertEquals(Expected, Actual);
+    }
+
+    @Test
+    void ReadWriteMaxSize() throws IOException {
+        StudentDatabase testDB = new StudentDatabase();
+        testDB.readFile("TestResources/inputFiles/MaxSize.txt");
+        testDB.recordsToFile("TestResources/OutputFiles/out.txt");
+        String Expected = Files.readString(Paths.get("TestResources/OutputFiles/MaxSizeCompare.txt"));
+        String Actual = Files.readString(Paths.get("TestResources/OutputFiles/out.txt"));
+        Files.delete(Path.of("TestResources/OutputFiles/out.txt"));
+        assertEquals(Expected, Actual);
+    }
+
+    @Test
+    void ReadWriteDupIDs() throws IOException {
+        StudentDatabase testDB = new StudentDatabase();
+        testDB.readFile("TestResources/inputFiles/duplicateIDs.txt");
+        testDB.recordsToFile("TestResources/OutputFiles/out.txt");
+        String Expected = Files.readString(Paths.get("TestResources/OutputFiles/DIDCompare.txt"));
         String Actual = Files.readString(Paths.get("TestResources/OutputFiles/out.txt"));
         Files.delete(Path.of("TestResources/OutputFiles/out.txt"));
         assertEquals(Expected, Actual);

@@ -5,6 +5,23 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PrizeTest {
+    @Test
+    void testConstuctor() {
+        Prize test = new Prize("Test Prize", "Test Template", "1");
+        assertAll(
+                () -> assertEquals("Test Prize", test.getName()),
+                () -> assertEquals("Test Template", test.getTemplate()),
+                () -> assertEquals("1", test.getTopicsRequired())
+        );
+    }
+
+    @Test
+    void testShow () {
+        Prize test = new Prize("Test Prize", "Test Template", "1");
+        assertEquals("Name: Test Prize Template: Test Template Topics Required: 1\n", test.show());
+    }
+
+
 
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/prizeData.csv", numLinesToSkip = 1)

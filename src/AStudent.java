@@ -15,7 +15,20 @@ public class AStudent extends Student{
     }
     @Override
     public String show(){
-        return super.show() +"\nMajor: " + major + "\nMinor: " + minor;
+        String print1 = "";
+        print1 += super.showName() + "\n";
+        print1 += "Major: " + getMajor() + "\n";
+        print1 += "Minor: " + getMinor() + "\n";
+        print1+= super.showResults1();
+        return print1.trim();
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public String getMinor() {
+        return minor;
     }
 
 

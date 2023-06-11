@@ -4,6 +4,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,10 +13,14 @@ class StudentTest {
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
     void setDegree(String command,String degree) {
+        HashMap<String,String> expected = new HashMap<>();
+        expected.put("S","Science");
+        expected.put("A","Arts");
+        expected.put("M","Medicine");
         Student test = new Student(command);
         test.setDegree(degree);
         String output = test.getDegree();
-        assertEquals(degree,output);
+        assertEquals(expected.get(degree),output);
     }
 
     @ParameterizedTest
@@ -32,7 +37,7 @@ class StudentTest {
     public void getFirstName(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
-        String output = test.getLastName();
+        String output = test.getFirstName();
         assertEquals(points[2],output);
     }
 
@@ -41,17 +46,21 @@ class StudentTest {
     public void getStudentID(String command) {
         Student test = new Student(command);
         String[] points = command.split(",");
-        String output = test.getLastName();
+        String output = test.getStudentID();
         assertEquals(points[1],output);
     }
 
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/StudentData.csv", numLinesToSkip = 1)
     public void getDegree(String command) {
+        HashMap<String,String> expected = new HashMap<>();
+        expected.put("S","Science");
+        expected.put("A","Arts");
+        expected.put("M","Medicine");
         Student test = new Student(command);
         String[] points = command.split(",");
-        String output = test.getLastName();
-        assertEquals(points[0],output);
+        String output = test.getDegree();
+        assertEquals(expected.get(points[0]),output);
     }
 
     @ParameterizedTest
@@ -59,7 +68,7 @@ class StudentTest {
     public void getTopicCount(int num) {
         Student test = new Student("S,9800123,Smith,John Paul");
         for (int i=0;i<num;i++){
-            test.addResult("R,1,1,1,1");
+            test.addResult("R,9800123,AAAA" + (1000 + i) + ",FL," + i);
         }
         int output = test.getTopicCount();
         assertEquals(num,output);
@@ -90,8 +99,9 @@ class StudentTest {
     void TestSetIncorrectDegree() {
         String testInput = "S,1000001,Student,Test";
         Student test = new Student(testInput);
-        test.setDegree("K");
-        assertEquals("K", test.getDegree());
+        assertThrows(IllegalArgumentException.class, () -> {
+            test.setDegree("K");
+        });
     }
 
     //Testing an incorrect degree input (F is not a valid degree)
@@ -103,7 +113,7 @@ class StudentTest {
         });
     }
 
-    //Testing a student ID of incorrect length (expecting an exception or message)
+    //Testing a student ID of incorrect length
     @Test
     public void IncorrectStudentIDLengthTest() {
         String testInput = "S,10001,Student,Test";
@@ -153,14 +163,13 @@ class StudentTest {
     public void addResult() {
         Student test = new Student("S,9800123,Smith,John Paul");
         for (int i=0;i<10;i++){
-            test.addResult(i+","+i+","+i);
+            test.addResult("R,9800123,AAAA100"+i+",FL,"+i);
         }
         ArrayList<Topic> output = test.getResult();
         String out = "";
-        String expected = "";
+        String expected = "AAAA1000 FL 0|AAAA1001 FL 1|AAAA1002 FL 2|AAAA1003 FL 3|AAAA1004 FL 4|AAAA1005 FL 5|AAAA1006 FL 6|AAAA1007 FL 7|AAAA1008 FL 8|AAAA1009 FL 9|";
         for (int i=0;i<output.size();i++){
             out += output.get(i).show()+"|";
-            expected += i+","+i+","+i+"|";
         }
         assertEquals(expected,out);
     }
@@ -169,7 +178,7 @@ class StudentTest {
     public void resultSize() {
         Student test = new Student("S,9800123,Smith,John Paul");
         for (int i=0;i<5;i++){
-            test.addResult("1,1,1");
+            test.addResult("R,9800123,AAAA100" + i + ",DN,82");
         }
         assertEquals(10,test.getTopicCount() + test.resultSize());
     }
@@ -184,6 +193,20 @@ class StudentTest {
         assertEquals("Test Student (Student ID: 1000001)\n" +
                 "Degree: Science\n" +
                 "AAAA1111 DN 75", test.show());
+    }
+
+    @Test
+    public void GetTopicResultTest() {
+        Student test = new Student("S,1000001,Student,Test");
+        test.addResult("R,1000001,TEST1001,HD,100");
+        Topic expected = new Topic("TEST1001","HD",100);
+        assertEquals(expected.show(), test.getTopicResult("TEST1001").show());
+    }
+
+    @Test
+    public void GetNonExistantTopicResultTest() {
+        Student test = new Student("S,1000001,Student,Test");
+        assertEquals(null, test.getTopicResult("TEST1001"));
     }
 
     //Testing result input with too few arguments

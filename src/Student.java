@@ -20,7 +20,10 @@ public class Student {
     }
 
     public void setDegree(String degree) {
-        this.degree = degree;
+        if (degree.equals("A") || degree.equals("M") || degree.equals("S")) {
+            this.degree = degree;
+        } else throw new IllegalArgumentException("Degree must be A, M, S");
+
     }
 
     public String getLastName() {
@@ -37,7 +40,7 @@ public class Student {
 
     public String getDegree() {
         if(degree.equals("S")){return "Science";}
-        else if(degree.equals("A")){ return "Art";}
+        else if(degree.equals("A")){ return "Arts";}
         else if(degree.equals("M")){ return "Medicine";}
         else
             return degree;
@@ -101,19 +104,19 @@ public class Student {
         return print1;
     }
 
-    public String showResults() {
-        String print1 = "";
-        if (result.size() != 0)
-        {
-            print1+="\n";
-            for (int i = 0; i < result.size(); i++)
-            {
-                print1 += "Topic Code: "+result.get(i).getCode() + ", Grade: " + result.get(i).getGrade() + ", Mark: " + result.get(i).getMark() + ".\n";
-            }
-        }
-        print1 += "\n";
-        return print1.trim();
-    }
+//    public String showResults() {
+//        String print1 = "";
+//        if (result.size() != 0)
+//        {
+//            print1+="\n";
+//            for (int i = 0; i < result.size(); i++)
+//            {
+//                print1 += "Topic Code: "+result.get(i).getCode() + ", Grade: " + result.get(i).getGrade() + ", Mark: " + result.get(i).getMark() + ".\n";
+//            }
+//        }
+//        print1 += "\n";
+//        return print1.trim();
+//    }
 
     public String showResults1() {
         String print1 = "";

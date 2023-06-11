@@ -6,17 +6,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MStudentTest {
 
-//    @ParameterizedTest
-//    @CsvFileSource(resources = "TestingData/StudentDataP.csv", numLinesToSkip = 1)
-//    void addPrizesTest(String name, String template, String topic) {
-//        MStudent test = new MStudent("M 1 A B");
-//        test.addPrizes(name, template, topic);
-//        String output = test.show();
-//        String expected = "A B (Student ID: 1)\n";
-//        expected += "Degree: M";
-//        expected += "Name: " + name + " Template: " + template + " Topics Required: " + topic + "\n";
-//        assertEquals(expected, output);
-//    }
+    @ParameterizedTest
+    @CsvFileSource(resources = "TestingData/StudentDataP.csv", numLinesToSkip = 1)
+    void addPrizesTest(String name, String template, String topic) {
+        MStudent test = new MStudent("M,1000001,Student,Test");
+        test.addPrizes(name, template, topic);
+        String output = test.show();
+        String expected = "Test Student (Student ID: 1000001)\n";
+        expected += "Degree: Medicine\n";
+        expected += "Prize: " + name;
+        assertEquals(expected, output);
+    }
 
     @Test
     void testConstructor() {
@@ -75,9 +75,9 @@ class MStudentTest {
     void testAddMulitplePrizes() {
         String testInput = "M,1000001,Student,Test";
         MStudent test = new MStudent(testInput);
-        Prize testP = new Prize("Test Prize", "TEMPLATE", "1");
-        Prize testP1 = new Prize("Test Prize1", "TEMPLATE", "1");
-        Prize testP2 = new Prize("Test Prize2", "TEMPLATE", "1");
+        Prize testP = new Prize("Test Prize", "TEMP", "1");
+        Prize testP1 = new Prize("Test Prize1", "TEMP", "1");
+        Prize testP2 = new Prize("Test Prize2", "TEMP", "1");
         test.addPrize(testP);
         test.addPrize(testP1);
         test.addPrize(testP2);

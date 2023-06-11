@@ -22,13 +22,13 @@ class TopicTest {
         assertEquals("TEST1000 CR 69", test.show());
     }
 
-    /*@ParameterizedTest
-    @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 1)
-    void ConstructorFailTest(String Code, String Grade, String Mark){
-            //assertThrows(class, () -> {
-
-            //});
-    }*/
+    @ParameterizedTest
+    @CsvFileSource(resources = "TestingData/badTopicData.csv", numLinesToSkip = 1)
+    void ConstructorFailTest(String Code, String Grade,int Mark){
+            assertThrows(IllegalArgumentException.class, () -> {
+                Topic test = new Topic(Code,Grade,Mark);
+            });
+    }
 
     @ParameterizedTest
     @CsvFileSource(resources = "TestingData/topicData.csv", numLinesToSkip = 1)

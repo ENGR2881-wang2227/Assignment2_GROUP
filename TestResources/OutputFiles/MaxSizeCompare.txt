@@ -1,5 +1,5 @@
 Academic record for fName lName (Student ID: 1000000)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 74
@@ -75,7 +75,7 @@ CCCC1001 FL 1
 DDDD1001 DN 79
 
 Academic record for fName lName (Student ID: 1000007)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 19
@@ -146,7 +146,7 @@ BBBB2001 CR 69
 CCCC2001 PS 62
 
 Academic record for fName lName (Student ID: 1000012)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -208,7 +208,7 @@ EEEE2001 PS 50
 FFFF2001 DN 76
 
 Academic record for fName lName (Student ID: 1000016)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -359,7 +359,7 @@ CCCC2002 CR 68
 DDDD2002 CR 71
 
 Academic record for fName lName (Student ID: 1000024)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 15
@@ -378,7 +378,7 @@ CCCC2001 FL 44
 DDDD2001 CR 66
 
 Academic record for fName lName (Student ID: 1000025)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 76
@@ -389,7 +389,7 @@ EEEE1001 CR 68
 FFFF1001 FL 2
 
 Academic record for fName lName (Student ID: 1000026)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 65
@@ -408,7 +408,7 @@ DDDD1001 CR 70
 EEEE1001 DN 75
 
 Academic record for fName lName (Student ID: 1000028)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 79
@@ -440,7 +440,7 @@ BBBB1001 FL 43
 CCCC1001 CR 65
 
 Academic record for fName lName (Student ID: 1000030)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -475,7 +475,7 @@ BBBB2002 CR 66
 CCCC2002 DN 77
 
 Academic record for fName lName (Student ID: 1000032)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 33
@@ -563,7 +563,7 @@ JJJJ2001 DN 77
 AAAA2002 PS 57
 
 Academic record for fName lName (Student ID: 1000037)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 61
@@ -590,7 +590,7 @@ DDDD1001 PS 63
 EEEE1001 FL 22
 
 Academic record for fName lName (Student ID: 1000039)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 8
@@ -629,7 +629,7 @@ BBBB2001 FL 36
 CCCC2001 PS 54
 
 Academic record for fName lName (Student ID: 1000042)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 25
@@ -678,7 +678,7 @@ GGGG1001 FL 13
 HHHH1001 FL 39
 
 Academic record for fName lName (Student ID: 1000045)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 81
@@ -706,7 +706,7 @@ BBBB2002 DN 77
 CCCC2002 DN 83
 
 Academic record for fName lName (Student ID: 1000046)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -798,7 +798,7 @@ IIII2001 CR 73
 JJJJ2001 FL 8
 
 Academic record for fName lName (Student ID: 1000051)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 32
@@ -826,7 +826,7 @@ BBBB2002 PS 56
 CCCC2002 DN 84
 
 Academic record for fName lName (Student ID: 1000052)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 37
@@ -852,7 +852,7 @@ JJJJ2001 CR 67
 AAAA2002 CR 70
 
 Academic record for fName lName (Student ID: 1000053)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 76
@@ -879,7 +879,7 @@ AAAA2002 FL 34
 BBBB2002 PS 52
 
 Academic record for fName lName (Student ID: 1000054)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77
@@ -918,7 +918,7 @@ HHHH1001 PS 58
 IIII1001 FL 0
 
 Academic record for fName lName (Student ID: 1000056)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 12
@@ -928,7 +928,7 @@ DDDD1001 CR 65
 EEEE1001 DN 80
 
 Academic record for fName lName (Student ID: 1000057)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 11
@@ -950,7 +950,7 @@ FFFF2001 CR 73
 GGGG2001 FL 27
 
 Academic record for fName lName (Student ID: 1000058)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -966,7 +966,7 @@ JJJJ1001 PS 60
 AAAA2001 PS 56
 
 Academic record for fName lName (Student ID: 1000059)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 55
@@ -1030,7 +1030,7 @@ HHHH1001 DN 83
 IIII1001 DN 78
 
 Academic record for fName lName (Student ID: 1000063)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 62
@@ -1045,7 +1045,7 @@ IIII1001 PS 59
 JJJJ1001 DN 84
 
 Academic record for fName lName (Student ID: 1000064)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 52
@@ -1077,7 +1077,7 @@ IIII2001 DN 79
 JJJJ2001 DN 83
 
 Academic record for fName lName (Student ID: 1000066)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 52
@@ -1180,7 +1180,7 @@ FFFF1001 FL 47
 GGGG1001 CR 74
 
 Academic record for fName lName (Student ID: 1000072)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -1239,7 +1239,7 @@ EEEE1001 DN 77
 FFFF1001 PS 51
 
 Academic record for fName lName (Student ID: 1000075)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 63
@@ -1303,7 +1303,7 @@ AAAA2001 CR 73
 BBBB2001 DN 84
 
 Academic record for fName lName (Student ID: 1000078)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77
@@ -1363,7 +1363,7 @@ BBBB2001 PS 60
 CCCC2001 FL 10
 
 Academic record for fName lName (Student ID: 1000082)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 72
@@ -1384,7 +1384,7 @@ EEEE2001 DN 82
 FFFF2001 FL 13
 
 Academic record for fName lName (Student ID: 1000083)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -1450,7 +1450,7 @@ DDDD1001 FL 14
 EEEE1001 PS 64
 
 Academic record for fName lName (Student ID: 1000088)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77
@@ -1507,7 +1507,7 @@ JJJJ2001 FL 21
 AAAA2002 PS 56
 
 Academic record for fName lName (Student ID: 1000092)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 69
@@ -1553,7 +1553,7 @@ CCCC2002 PS 62
 DDDD2002 CR 73
 
 Academic record for fName lName (Student ID: 1000095)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 71
@@ -1580,7 +1580,7 @@ AAAA2002 FL 4
 BBBB2002 FL 44
 
 Academic record for fName lName (Student ID: 1000096)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 59
@@ -1640,7 +1640,7 @@ HHHH1001 PS 51
 IIII1001 FL 37
 
 Academic record for fName lName (Student ID: 1000100)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
@@ -1680,7 +1680,7 @@ JJJJ1001 DN 82
 AAAA2001 PS 50
 
 Academic record for fName lName (Student ID: 1000102)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 21
@@ -1726,7 +1726,7 @@ IIII2001 CR 65
 JJJJ2001 DN 82
 
 Academic record for fName lName (Student ID: 1000104)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 62
@@ -1900,7 +1900,7 @@ AAAA2002 PS 51
 BBBB2002 PS 62
 
 Academic record for fName lName (Student ID: 1000114)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77
@@ -1927,7 +1927,7 @@ AAAA2002 FL 27
 BBBB2002 FL 11
 
 Academic record for fName lName (Student ID: 1000115)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 52
@@ -1967,7 +1967,7 @@ HHHH2001 DN 80
 IIII2001 DN 78
 
 Academic record for fName lName (Student ID: 1000118)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 65
@@ -1990,7 +1990,7 @@ GGGG2001 FL 21
 HHHH2001 CR 66
 
 Academic record for fName lName (Student ID: 1000119)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 14
@@ -2026,7 +2026,7 @@ IIII1001 DN 81
 JJJJ1001 FL 18
 
 Academic record for fName lName (Student ID: 1000121)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 55
@@ -2043,7 +2043,7 @@ AAAA2001 FL 43
 BBBB2001 DN 81
 
 Academic record for fName lName (Student ID: 1000122)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -2067,7 +2067,7 @@ HHHH2001 DN 81
 IIII2001 DN 75
 
 Academic record for fName lName (Student ID: 1000123)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 58
@@ -2131,7 +2131,7 @@ IIII2001 FL 18
 JJJJ2001 FL 5
 
 Academic record for fName lName (Student ID: 1000128)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 83
@@ -2292,7 +2292,7 @@ BBBB2002 PS 51
 CCCC2002 CR 69
 
 Academic record for fName lName (Student ID: 1000136)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 51
@@ -2494,7 +2494,7 @@ GGGG1001 FL 36
 HHHH1001 PS 58
 
 Academic record for fName lName (Student ID: 1000150)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -2526,13 +2526,13 @@ EEEE1001 PS 54
 FFFF1001 PS 52
 
 Academic record for fName lName (Student ID: 1000152)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 56
 
 Academic record for fName lName (Student ID: 1000153)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 60
@@ -2588,7 +2588,7 @@ GGGG1001 PS 57
 HHHH1001 PS 59
 
 Academic record for fName lName (Student ID: 1000156)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 71
@@ -2658,7 +2658,7 @@ HHHH1001 CR 69
 IIII1001 PS 64
 
 Academic record for fName lName (Student ID: 1000160)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 13
@@ -2699,7 +2699,7 @@ Degree: Medicine
 AAAA1001 CR 70
 
 Academic record for fName lName (Student ID: 1000163)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -2721,7 +2721,7 @@ FFFF2001 FL 23
 GGGG2001 FL 27
 
 Academic record for fName lName (Student ID: 1000164)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 62
@@ -2744,7 +2744,7 @@ GGGG2001 PS 63
 HHHH2001 PS 59
 
 Academic record for fName lName (Student ID: 1000165)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 40
@@ -2759,7 +2759,7 @@ IIII1001 CR 71
 JJJJ1001 DN 82
 
 Academic record for fName lName (Student ID: 1000166)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 1
@@ -2770,7 +2770,7 @@ EEEE1001 DN 84
 FFFF1001 FL 39
 
 Academic record for fName lName (Student ID: 1000167)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 81
@@ -2791,7 +2791,7 @@ EEEE2001 CR 70
 FFFF2001 FL 38
 
 Academic record for fName lName (Student ID: 1000168)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -2890,7 +2890,7 @@ AAAA2001 PS 57
 BBBB2001 PS 60
 
 Academic record for fName lName (Student ID: 1000174)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
@@ -2916,7 +2916,7 @@ IIII1001 DN 75
 JJJJ1001 DN 77
 
 Academic record for fName lName (Student ID: 1000177)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 28
@@ -2954,7 +2954,7 @@ AAAA2001 PS 58
 BBBB2001 CR 73
 
 Academic record for fName lName (Student ID: 1000179)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77
@@ -2998,7 +2998,7 @@ Degree: Medicine
 AAAA1001 PS 61
 
 Academic record for fName lName (Student ID: 1000183)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 74
@@ -3044,7 +3044,7 @@ DDDD2001 CR 74
 EEEE2001 CR 71
 
 Academic record for fName lName (Student ID: 1000187)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 11
@@ -3149,7 +3149,7 @@ CCCC1001 CR 71
 DDDD1001 PS 53
 
 Academic record for fName lName (Student ID: 1000194)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 76
@@ -3222,7 +3222,7 @@ GGGG1001 PS 62
 HHHH1001 CR 65
 
 Academic record for fName lName (Student ID: 1000198)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
@@ -3316,7 +3316,7 @@ DDDD2001 DN 79
 EEEE2001 DN 84
 
 Academic record for fName lName (Student ID: 1000204)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 81
@@ -3442,7 +3442,7 @@ DDDD1001 PS 59
 EEEE1001 DN 77
 
 Academic record for fName lName (Student ID: 1000214)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 33
@@ -3515,7 +3515,7 @@ IIII2001 CR 68
 JJJJ2001 PS 56
 
 Academic record for fName lName (Student ID: 1000218)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 2
@@ -3566,7 +3566,7 @@ CCCC1001 PS 55
 DDDD1001 DN 84
 
 Academic record for fName lName (Student ID: 1000222)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 60
@@ -3592,7 +3592,7 @@ JJJJ2001 FL 30
 AAAA2002 FL 1
 
 Academic record for fName lName (Student ID: 1000223)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 74
@@ -3608,7 +3608,7 @@ EEEE1001 FL 2
 FFFF1001 CR 71
 
 Academic record for fName lName (Student ID: 1000225)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 21
@@ -3629,7 +3629,7 @@ EEEE2001 PS 62
 FFFF2001 DN 78
 
 Academic record for fName lName (Student ID: 1000226)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 74
@@ -3647,7 +3647,7 @@ BBBB2001 DN 76
 CCCC2001 PS 54
 
 Academic record for fName lName (Student ID: 1000227)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -3662,7 +3662,7 @@ IIII1001 DN 81
 JJJJ1001 FL 18
 
 Academic record for fName lName (Student ID: 1000228)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 2
@@ -3711,7 +3711,7 @@ BBBB1001 DN 82
 CCCC1001 DN 79
 
 Academic record for fName lName (Student ID: 1000231)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 83
@@ -3823,7 +3823,7 @@ BBBB2002 DN 82
 CCCC2002 PS 61
 
 Academic record for fName lName (Student ID: 1000237)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 69
@@ -3950,7 +3950,7 @@ DDDD1001 CR 73
 EEEE1001 CR 70
 
 Academic record for fName lName (Student ID: 1000244)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 21
@@ -3964,7 +3964,7 @@ HHHH1001 CR 66
 IIII1001 DN 84
 
 Academic record for fName lName (Student ID: 1000245)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -4011,7 +4011,7 @@ GGGG1001 PS 63
 HHHH1001 CR 66
 
 Academic record for fName lName (Student ID: 1000248)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 52
@@ -4116,13 +4116,13 @@ CCCC1001 PS 53
 DDDD1001 CR 73
 
 Academic record for fName lName (Student ID: 1000254)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 60
 
 Academic record for fName lName (Student ID: 1000255)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 7
@@ -4260,7 +4260,7 @@ BBBB2002 DN 78
 CCCC2002 CR 68
 
 Academic record for fName lName (Student ID: 1000263)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -4290,7 +4290,7 @@ GGGG1001 FL 44
 HHHH1001 PS 56
 
 Academic record for fName lName (Student ID: 1000266)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -4338,7 +4338,7 @@ IIII2001 PS 54
 JJJJ2001 CR 67
 
 Academic record for fName lName (Student ID: 1000268)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 11
@@ -4382,7 +4382,7 @@ HHHH2001 FL 28
 IIII2001 PS 62
 
 Academic record for fName lName (Student ID: 1000271)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -4515,7 +4515,7 @@ CCCC2002 DN 79
 DDDD2002 PS 51
 
 Academic record for fName lName (Student ID: 1000279)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -4541,7 +4541,7 @@ JJJJ2001 CR 73
 AAAA2002 PS 54
 
 Academic record for fName lName (Student ID: 1000280)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -4568,7 +4568,7 @@ AAAA2002 PS 64
 BBBB2002 CR 73
 
 Academic record for fName lName (Student ID: 1000281)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 1
@@ -4589,7 +4589,7 @@ EEEE2001 PS 50
 FFFF2001 PS 61
 
 Academic record for fName lName (Student ID: 1000282)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 70
@@ -4634,7 +4634,7 @@ HHHH2001 CR 69
 IIII2001 FL 2
 
 Academic record for fName lName (Student ID: 1000284)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 59
@@ -4664,7 +4664,7 @@ Degree: Medicine
 AAAA1001 DN 81
 
 Academic record for fName lName (Student ID: 1000286)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 56
@@ -4728,7 +4728,7 @@ JJJJ1001 FL 26
 AAAA2001 FL 48
 
 Academic record for fName lName (Student ID: 1000291)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 72
@@ -4737,7 +4737,7 @@ CCCC1001 PS 63
 DDDD1001 PS 56
 
 Academic record for fName lName (Student ID: 1000292)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 63
@@ -4833,7 +4833,7 @@ AAAA2001 PS 52
 BBBB2001 FL 49
 
 Academic record for fName lName (Student ID: 1000298)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 21
@@ -4939,7 +4939,7 @@ CCCC2001 FL 45
 DDDD2001 DN 80
 
 Academic record for fName lName (Student ID: 1000304)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 64
@@ -5018,7 +5018,7 @@ BBBB1001 PS 52
 CCCC1001 FL 36
 
 Academic record for fName lName (Student ID: 1000308)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -5234,7 +5234,7 @@ EEEE2001 PS 53
 FFFF2001 CR 66
 
 Academic record for fName lName (Student ID: 1000323)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 65
@@ -5253,7 +5253,7 @@ CCCC2001 PS 54
 DDDD2001 CR 66
 
 Academic record for fName lName (Student ID: 1000324)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -5311,7 +5311,7 @@ EEEE2001 DN 84
 FFFF2001 DN 79
 
 Academic record for fName lName (Student ID: 1000327)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -5378,7 +5378,7 @@ BBBB2001 PS 52
 CCCC2001 FL 34
 
 Academic record for fName lName (Student ID: 1000331)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 66
@@ -5452,7 +5452,7 @@ AAAA2002 DN 76
 BBBB2002 FL 42
 
 Academic record for fName lName (Student ID: 1000336)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 23
@@ -5574,7 +5574,7 @@ AAAA2001 FL 45
 BBBB2001 FL 16
 
 Academic record for fName lName (Student ID: 1000345)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -5608,7 +5608,7 @@ HHHH1001 CR 72
 IIII1001 DN 79
 
 Academic record for fName lName (Student ID: 1000347)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -5631,7 +5631,7 @@ GGGG2001 CR 65
 HHHH2001 PS 63
 
 Academic record for fName lName (Student ID: 1000348)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 83
@@ -5658,7 +5658,7 @@ AAAA2002 FL 26
 BBBB2002 CR 69
 
 Academic record for fName lName (Student ID: 1000349)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 55
@@ -5685,7 +5685,7 @@ CCCC1001 DN 82
 DDDD1001 DN 83
 
 Academic record for fName lName (Student ID: 1000351)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -5760,7 +5760,7 @@ GGGG2001 DN 76
 HHHH2001 DN 76
 
 Academic record for fName lName (Student ID: 1000355)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -5773,13 +5773,13 @@ GGGG1001 FL 15
 HHHH1001 PS 55
 
 Academic record for fName lName (Student ID: 1000356)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 66
 
 Academic record for fName lName (Student ID: 1000357)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 36
@@ -5836,7 +5836,7 @@ BBBB2001 DN 81
 CCCC2001 FL 36
 
 Academic record for fName lName (Student ID: 1000361)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -5913,7 +5913,7 @@ IIII2001 PS 59
 JJJJ2001 PS 58
 
 Academic record for fName lName (Student ID: 1000365)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 70
@@ -5998,7 +5998,7 @@ IIII2001 CR 69
 JJJJ2001 FL 37
 
 Academic record for fName lName (Student ID: 1000369)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -6062,7 +6062,7 @@ DDDD2001 CR 67
 EEEE2001 DN 76
 
 Academic record for fName lName (Student ID: 1000373)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 61
@@ -6088,7 +6088,7 @@ JJJJ2001 CR 73
 AAAA2002 DN 77
 
 Academic record for fName lName (Student ID: 1000374)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
@@ -6129,7 +6129,7 @@ CCCC2001 DN 84
 DDDD2001 FL 38
 
 Academic record for fName lName (Student ID: 1000376)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 59
@@ -6166,7 +6166,7 @@ EEEE1001 DN 83
 FFFF1001 CR 70
 
 Academic record for fName lName (Student ID: 1000378)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -6230,7 +6230,7 @@ CCCC2002 DN 84
 DDDD2002 FL 25
 
 Academic record for fName lName (Student ID: 1000381)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 6
@@ -6243,7 +6243,7 @@ GGGG1001 PS 51
 HHHH1001 PS 55
 
 Academic record for fName lName (Student ID: 1000382)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
@@ -6409,7 +6409,7 @@ GGGG2001 CR 74
 HHHH2001 FL 38
 
 Academic record for fName lName (Student ID: 1000393)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 61
@@ -6445,7 +6445,7 @@ FFFF2001 DN 79
 GGGG2001 CR 73
 
 Academic record for fName lName (Student ID: 1000395)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -6476,7 +6476,7 @@ BBBB2001 PS 50
 CCCC2001 FL 48
 
 Academic record for fName lName (Student ID: 1000398)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 57
@@ -6539,7 +6539,7 @@ AAAA2002 DN 76
 BBBB2002 FL 20
 
 Academic record for fName lName (Student ID: 1000401)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 50
@@ -6724,7 +6724,7 @@ AAAA1001 FL 8
 BBBB1001 CR 66
 
 Academic record for fName lName (Student ID: 1000412)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -6756,7 +6756,7 @@ CCCC1001 PS 54
 DDDD1001 DN 81
 
 Academic record for fName lName (Student ID: 1000414)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 58
@@ -6767,7 +6767,7 @@ EEEE1001 PS 53
 FFFF1001 DN 79
 
 Academic record for fName lName (Student ID: 1000415)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 79
@@ -6785,7 +6785,7 @@ BBBB2001 DN 78
 CCCC2001 FL 31
 
 Academic record for fName lName (Student ID: 1000416)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 62
@@ -6860,7 +6860,7 @@ AAAA2002 CR 71
 BBBB2002 PS 62
 
 Academic record for fName lName (Student ID: 1000420)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 66
@@ -6908,7 +6908,7 @@ DDDD1001 DN 77
 EEEE1001 FL 4
 
 Academic record for fName lName (Student ID: 1000424)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 70
@@ -6916,7 +6916,7 @@ BBBB1001 FL 49
 CCCC1001 DN 84
 
 Academic record for fName lName (Student ID: 1000425)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 18
@@ -6995,7 +6995,7 @@ HHHH1001 PS 51
 IIII1001 FL 25
 
 Academic record for fName lName (Student ID: 1000429)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 59
@@ -7046,7 +7046,7 @@ BBBB1001 DN 75
 CCCC1001 CR 70
 
 Academic record for fName lName (Student ID: 1000432)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 72
@@ -7128,7 +7128,7 @@ AAAA2001 PS 64
 BBBB2001 FL 23
 
 Academic record for fName lName (Student ID: 1000437)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 7
@@ -7145,7 +7145,7 @@ AAAA2001 PS 50
 BBBB2001 DN 77
 
 Academic record for fName lName (Student ID: 1000438)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 63
@@ -7196,7 +7196,7 @@ JJJJ2001 DN 75
 AAAA2002 PS 57
 
 Academic record for fName lName (Student ID: 1000440)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 20
@@ -7243,7 +7243,7 @@ CCCC2001 CR 68
 DDDD2001 DN 80
 
 Academic record for fName lName (Student ID: 1000443)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 83
@@ -7284,7 +7284,7 @@ BBBB2002 PS 59
 CCCC2002 DN 81
 
 Academic record for fName lName (Student ID: 1000445)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 81
@@ -7342,7 +7342,7 @@ BBBB1001 PS 56
 CCCC1001 CR 72
 
 Academic record for fName lName (Student ID: 1000449)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 19
@@ -7379,7 +7379,7 @@ IIII2001 DN 82
 JJJJ2001 PS 60
 
 Academic record for fName lName (Student ID: 1000451)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 74
@@ -7396,7 +7396,7 @@ AAAA2001 FL 9
 BBBB2001 PS 54
 
 Academic record for fName lName (Student ID: 1000452)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 1
@@ -7467,7 +7467,7 @@ BBBB2001 DN 82
 CCCC2001 DN 75
 
 Academic record for fName lName (Student ID: 1000456)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 63
@@ -7494,7 +7494,7 @@ AAAA2002 FL 12
 BBBB2002 CR 69
 
 Academic record for fName lName (Student ID: 1000457)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -7554,7 +7554,7 @@ IIII2001 FL 2
 JJJJ2001 FL 7
 
 Academic record for fName lName (Student ID: 1000460)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 79
@@ -7571,7 +7571,7 @@ AAAA2001 DN 80
 BBBB2001 PS 57
 
 Academic record for fName lName (Student ID: 1000461)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -7638,7 +7638,7 @@ CCCC2002 DN 83
 DDDD2002 CR 65
 
 Academic record for fName lName (Student ID: 1000466)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
@@ -7651,7 +7651,7 @@ GGGG1001 DN 81
 HHHH1001 PS 59
 
 Academic record for fName lName (Student ID: 1000467)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 35
@@ -7736,7 +7736,7 @@ BBBB2002 PS 57
 CCCC2002 DN 76
 
 Academic record for fName lName (Student ID: 1000471)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 65
@@ -7794,7 +7794,7 @@ EEEE2001 CR 71
 FFFF2001 FL 1
 
 Academic record for fName lName (Student ID: 1000475)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 46
@@ -7988,7 +7988,7 @@ BBBB1001 DN 79
 CCCC1001 PS 52
 
 Academic record for fName lName (Student ID: 1000486)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 61
@@ -8006,7 +8006,7 @@ BBBB2001 FL 17
 CCCC2001 PS 54
 
 Academic record for fName lName (Student ID: 1000487)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 69
@@ -8032,7 +8032,7 @@ JJJJ2001 FL 28
 AAAA2002 CR 66
 
 Academic record for fName lName (Student ID: 1000488)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 7
@@ -8114,7 +8114,7 @@ EEEE2001 DN 78
 FFFF2001 DN 81
 
 Academic record for fName lName (Student ID: 1000493)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -8197,7 +8197,7 @@ HHHH2001 DN 81
 IIII2001 CR 74
 
 Academic record for fName lName (Student ID: 1000498)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 81
@@ -8211,7 +8211,7 @@ BBBB1001 DN 80
 CCCC1001 PS 63
 
 Academic record for fName lName (Student ID: 1000500)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -8243,7 +8243,7 @@ FFFF1001 DN 83
 GGGG1001 DN 82
 
 Academic record for fName lName (Student ID: 1000502)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 46
@@ -8272,7 +8272,7 @@ EEEE1001 DN 83
 FFFF1001 DN 83
 
 Academic record for fName lName (Student ID: 1000504)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 30
@@ -8316,7 +8316,7 @@ DDDD1001 CR 69
 EEEE1001 CR 72
 
 Academic record for fName lName (Student ID: 1000507)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -8409,7 +8409,7 @@ CCCC2001 PS 59
 DDDD2001 DN 76
 
 Academic record for fName lName (Student ID: 1000513)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 17
@@ -8419,7 +8419,7 @@ DDDD1001 CR 72
 EEEE1001 CR 70
 
 Academic record for fName lName (Student ID: 1000514)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 54
@@ -8465,7 +8465,7 @@ DDDD2001 DN 84
 EEEE2001 DN 84
 
 Academic record for fName lName (Student ID: 1000516)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 11
@@ -8525,7 +8525,7 @@ AAAA1001 DN 82
 BBBB1001 PS 54
 
 Academic record for fName lName (Student ID: 1000520)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 60
@@ -8623,7 +8623,7 @@ JJJJ1001 PS 51
 AAAA2001 CR 72
 
 Academic record for fName lName (Student ID: 1000527)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 79
@@ -8717,7 +8717,7 @@ JJJJ1001 FL 28
 AAAA2001 FL 26
 
 Academic record for fName lName (Student ID: 1000535)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 19
@@ -8742,7 +8742,7 @@ IIII2001 FL 14
 JJJJ2001 CR 71
 
 Academic record for fName lName (Student ID: 1000536)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 26
@@ -8755,7 +8755,7 @@ GGGG1001 FL 32
 HHHH1001 CR 72
 
 Academic record for fName lName (Student ID: 1000537)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -8765,7 +8765,7 @@ DDDD1001 DN 84
 EEEE1001 DN 84
 
 Academic record for fName lName (Student ID: 1000538)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -8837,7 +8837,7 @@ HHHH1001 PS 62
 IIII1001 FL 4
 
 Academic record for fName lName (Student ID: 1000543)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -8852,7 +8852,7 @@ IIII1001 PS 58
 JJJJ1001 CR 67
 
 Academic record for fName lName (Student ID: 1000544)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 59
@@ -8867,7 +8867,7 @@ IIII1001 DN 78
 JJJJ1001 CR 71
 
 Academic record for fName lName (Student ID: 1000545)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 56
@@ -8894,7 +8894,7 @@ AAAA2002 DN 80
 BBBB2002 DN 78
 
 Academic record for fName lName (Student ID: 1000546)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 59
@@ -8959,7 +8959,7 @@ AAAA1001 CR 67
 BBBB1001 PS 64
 
 Academic record for fName lName (Student ID: 1000552)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 37
@@ -8983,7 +8983,7 @@ CCCC2001 FL 35
 DDDD2001 DN 78
 
 Academic record for fName lName (Student ID: 1000554)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 81
@@ -9007,7 +9007,7 @@ HHHH2001 FL 14
 IIII2001 FL 11
 
 Academic record for fName lName (Student ID: 1000555)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 79
@@ -9048,7 +9048,7 @@ DDDD1001 DN 82
 EEEE1001 CR 71
 
 Academic record for fName lName (Student ID: 1000558)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 50
@@ -9087,7 +9087,7 @@ DDDD2001 CR 71
 EEEE2001 FL 31
 
 Academic record for fName lName (Student ID: 1000560)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -9129,7 +9129,7 @@ AAAA2001 CR 65
 BBBB2001 CR 74
 
 Academic record for fName lName (Student ID: 1000563)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 34
@@ -9196,7 +9196,7 @@ EEEE1001 PS 62
 FFFF1001 DN 81
 
 Academic record for fName lName (Student ID: 1000567)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 62
@@ -9251,7 +9251,7 @@ HHHH1001 CR 65
 IIII1001 DN 81
 
 Academic record for fName lName (Student ID: 1000570)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 58
@@ -9319,7 +9319,7 @@ IIII1001 FL 21
 JJJJ1001 FL 26
 
 Academic record for fName lName (Student ID: 1000574)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -9342,7 +9342,7 @@ IIII1001 PS 56
 JJJJ1001 PS 57
 
 Academic record for fName lName (Student ID: 1000576)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -9492,7 +9492,7 @@ BBBB2002 FL 30
 CCCC2002 PS 59
 
 Academic record for fName lName (Student ID: 1000585)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 83
@@ -9641,7 +9641,7 @@ CCCC2002 PS 60
 DDDD2002 CR 66
 
 Academic record for fName lName (Student ID: 1000591)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 33
@@ -9657,7 +9657,7 @@ JJJJ1001 DN 80
 AAAA2001 DN 76
 
 Academic record for fName lName (Student ID: 1000592)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -9695,7 +9695,7 @@ JJJJ2001 FL 7
 AAAA2002 DN 83
 
 Academic record for fName lName (Student ID: 1000595)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 70
@@ -9736,7 +9736,7 @@ DDDD2001 DN 84
 EEEE2001 CR 65
 
 Academic record for fName lName (Student ID: 1000597)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 46
@@ -9746,7 +9746,7 @@ DDDD1001 FL 14
 EEEE1001 PS 52
 
 Academic record for fName lName (Student ID: 1000598)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 46
@@ -9859,7 +9859,7 @@ BBBB2001 FL 18
 CCCC2001 DN 81
 
 Academic record for fName lName (Student ID: 1000604)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -9888,7 +9888,7 @@ EEEE1001 FL 46
 FFFF1001 CR 68
 
 Academic record for fName lName (Student ID: 1000606)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -9903,7 +9903,7 @@ IIII1001 DN 81
 JJJJ1001 FL 23
 
 Academic record for fName lName (Student ID: 1000607)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 17
@@ -9916,7 +9916,7 @@ GGGG1001 FL 19
 HHHH1001 DN 82
 
 Academic record for fName lName (Student ID: 1000608)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 69
@@ -9968,7 +9968,7 @@ JJJJ1001 CR 72
 AAAA2001 FL 8
 
 Academic record for fName lName (Student ID: 1000611)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 39
@@ -10114,7 +10114,7 @@ EEEE1001 CR 67
 FFFF1001 DN 75
 
 Academic record for fName lName (Student ID: 1000619)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 21
@@ -10180,7 +10180,7 @@ GGGG2001 FL 2
 HHHH2001 PS 56
 
 Academic record for fName lName (Student ID: 1000622)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 56
@@ -10199,7 +10199,7 @@ DDDD1001 CR 73
 EEEE1001 PS 63
 
 Academic record for fName lName (Student ID: 1000625)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 69
@@ -10281,7 +10281,7 @@ EEEE1001 CR 70
 FFFF1001 FL 42
 
 Academic record for fName lName (Student ID: 1000632)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 65
@@ -10293,7 +10293,7 @@ AAAA1001 CR 70
 BBBB1001 FL 17
 
 Academic record for fName lName (Student ID: 1000634)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 39
@@ -10370,14 +10370,14 @@ BBBB2002 CR 74
 CCCC2002 DN 77
 
 Academic record for fName lName (Student ID: 1000637)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 70
 BBBB1001 CR 70
 
 Academic record for fName lName (Student ID: 1000638)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -10398,7 +10398,7 @@ EEEE2001 PS 58
 FFFF2001 FL 34
 
 Academic record for fName lName (Student ID: 1000639)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 59
@@ -10468,7 +10468,7 @@ GGGG2001 PS 64
 HHHH2001 DN 78
 
 Academic record for fName lName (Student ID: 1000644)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 32
@@ -10542,7 +10542,7 @@ HHHH2001 PS 52
 IIII2001 CR 67
 
 Academic record for fName lName (Student ID: 1000650)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 17
@@ -10555,7 +10555,7 @@ GGGG1001 FL 11
 HHHH1001 CR 69
 
 Academic record for fName lName (Student ID: 1000651)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -10628,7 +10628,7 @@ AAAA2002 DN 84
 BBBB2002 DN 81
 
 Academic record for fName lName (Student ID: 1000656)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -10664,7 +10664,7 @@ CCCC2001 DN 76
 DDDD2001 DN 83
 
 Academic record for fName lName (Student ID: 1000658)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
@@ -10693,7 +10693,7 @@ JJJJ1001 FL 38
 AAAA2001 CR 70
 
 Academic record for fName lName (Student ID: 1000660)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 32
@@ -10739,7 +10739,7 @@ JJJJ2001 CR 69
 AAAA2002 PS 64
 
 Academic record for fName lName (Student ID: 1000662)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 83
@@ -10766,7 +10766,7 @@ HHHH1001 PS 62
 IIII1001 FL 49
 
 Academic record for fName lName (Student ID: 1000664)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 20
@@ -10794,7 +10794,7 @@ EEEE1001 PS 52
 FFFF1001 DN 78
 
 Academic record for fName lName (Student ID: 1000666)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 22
@@ -10827,7 +10827,7 @@ BBBB2001 DN 76
 CCCC2001 CR 70
 
 Academic record for fName lName (Student ID: 1000668)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 76
@@ -10860,7 +10860,7 @@ HHHH2001 PS 53
 IIII2001 DN 84
 
 Academic record for fName lName (Student ID: 1000670)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 17
@@ -10901,7 +10901,7 @@ Degree: Science
 AAAA1001 CR 66
 
 Academic record for fName lName (Student ID: 1000673)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 79
@@ -10925,7 +10925,7 @@ HHHH2001 PS 55
 IIII2001 DN 81
 
 Academic record for fName lName (Student ID: 1000674)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 54
@@ -11097,7 +11097,7 @@ FFFF2001 PS 62
 GGGG2001 PS 56
 
 Academic record for fName lName (Student ID: 1000684)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 54
@@ -11118,7 +11118,7 @@ EEEE2001 CR 68
 FFFF2001 FL 37
 
 Academic record for fName lName (Student ID: 1000685)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 51
@@ -11234,7 +11234,7 @@ BBBB2001 FL 47
 CCCC2001 DN 83
 
 Academic record for fName lName (Student ID: 1000691)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -11325,7 +11325,7 @@ AAAA2001 CR 67
 BBBB2001 DN 80
 
 Academic record for fName lName (Student ID: 1000698)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 58
@@ -11368,7 +11368,7 @@ HHHH2001 PS 55
 IIII2001 PS 58
 
 Academic record for fName lName (Student ID: 1000701)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 55
@@ -11400,7 +11400,7 @@ HHHH2001 DN 83
 IIII2001 CR 65
 
 Academic record for fName lName (Student ID: 1000703)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 53
@@ -11479,7 +11479,7 @@ CCCC2002 DN 82
 DDDD2002 FL 11
 
 Academic record for fName lName (Student ID: 1000707)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 83
@@ -11504,7 +11504,7 @@ IIII2001 FL 46
 JJJJ2001 DN 76
 
 Academic record for fName lName (Student ID: 1000708)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 6
@@ -11538,7 +11538,7 @@ CCCC2001 PS 53
 DDDD2001 FL 2
 
 Academic record for fName lName (Student ID: 1000710)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -11566,7 +11566,7 @@ BBBB2002 DN 75
 CCCC2002 PS 64
 
 Academic record for fName lName (Student ID: 1000711)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 18
@@ -11601,7 +11601,7 @@ JJJJ1001 FL 26
 AAAA2001 CR 69
 
 Academic record for fName lName (Student ID: 1000713)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 70
@@ -11703,7 +11703,7 @@ BBBB1001 CR 73
 CCCC1001 FL 30
 
 Academic record for fName lName (Student ID: 1000721)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -11768,7 +11768,7 @@ Degree: Medicine
 AAAA1001 FL 3
 
 Academic record for fName lName (Student ID: 1000726)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 62
@@ -11803,7 +11803,7 @@ EEEE1001 FL 0
 FFFF1001 DN 83
 
 Academic record for fName lName (Student ID: 1000729)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 76
@@ -11894,7 +11894,7 @@ BBBB2001 DN 84
 CCCC2001 CR 65
 
 Academic record for fName lName (Student ID: 1000733)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -11918,7 +11918,7 @@ HHHH2001 FL 0
 IIII2001 PS 62
 
 Academic record for fName lName (Student ID: 1000734)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 54
@@ -11974,7 +11974,7 @@ JJJJ2001 PS 59
 AAAA2002 DN 81
 
 Academic record for fName lName (Student ID: 1000737)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -12225,7 +12225,7 @@ CCCC2002 PS 57
 DDDD2002 FL 34
 
 Academic record for fName lName (Student ID: 1000753)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 24
@@ -12248,7 +12248,7 @@ GGGG2001 FL 26
 HHHH2001 DN 80
 
 Academic record for fName lName (Student ID: 1000754)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
@@ -12263,7 +12263,7 @@ IIII1001 FL 12
 JJJJ1001 DN 76
 
 Academic record for fName lName (Student ID: 1000755)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 81
@@ -12312,7 +12312,7 @@ AAAA1001 PS 62
 BBBB1001 DN 75
 
 Academic record for fName lName (Student ID: 1000758)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 61
@@ -12330,7 +12330,7 @@ BBBB2001 PS 56
 CCCC2001 FL 1
 
 Academic record for fName lName (Student ID: 1000759)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 5
@@ -12353,7 +12353,7 @@ GGGG2001 PS 52
 HHHH2001 CR 72
 
 Academic record for fName lName (Student ID: 1000760)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -12368,7 +12368,7 @@ IIII1001 DN 76
 JJJJ1001 DN 75
 
 Academic record for fName lName (Student ID: 1000761)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 47
@@ -12381,7 +12381,7 @@ GGGG1001 CR 71
 HHHH1001 FL 14
 
 Academic record for fName lName (Student ID: 1000762)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 55
@@ -12389,7 +12389,7 @@ BBBB1001 DN 78
 CCCC1001 FL 12
 
 Academic record for fName lName (Student ID: 1000763)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 65
@@ -12402,7 +12402,7 @@ GGGG1001 DN 79
 HHHH1001 DN 78
 
 Academic record for fName lName (Student ID: 1000764)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 42
@@ -12412,7 +12412,7 @@ DDDD1001 PS 54
 EEEE1001 FL 8
 
 Academic record for fName lName (Student ID: 1000765)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 4
@@ -12451,13 +12451,13 @@ Degree: Science
 AAAA1001 PS 63
 
 Academic record for fName lName (Student ID: 1000768)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 17
 
 Academic record for fName lName (Student ID: 1000769)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 60
@@ -12497,7 +12497,7 @@ EEEE1001 FL 13
 FFFF1001 DN 84
 
 Academic record for fName lName (Student ID: 1000772)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 57
@@ -12553,7 +12553,7 @@ DDDD2001 DN 83
 EEEE2001 PS 55
 
 Academic record for fName lName (Student ID: 1000775)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 69
@@ -12625,7 +12625,7 @@ IIII2001 PS 64
 JJJJ2001 FL 6
 
 Academic record for fName lName (Student ID: 1000779)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 6
@@ -12662,7 +12662,7 @@ CCCC1001 PS 57
 DDDD1001 FL 9
 
 Academic record for fName lName (Student ID: 1000782)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 69
@@ -12691,7 +12691,7 @@ FFFF1001 PS 50
 GGGG1001 PS 57
 
 Academic record for fName lName (Student ID: 1000784)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -12750,7 +12750,7 @@ AAAA1001 DN 82
 BBBB1001 PS 57
 
 Academic record for fName lName (Student ID: 1000789)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -12776,7 +12776,7 @@ BBBB1001 DN 82
 CCCC1001 CR 65
 
 Academic record for fName lName (Student ID: 1000791)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 72
@@ -12812,7 +12812,7 @@ IIII1001 DN 82
 JJJJ1001 CR 70
 
 Academic record for fName lName (Student ID: 1000793)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 76
@@ -12829,7 +12829,7 @@ AAAA2001 PS 61
 BBBB2001 FL 48
 
 Academic record for fName lName (Student ID: 1000794)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 65
@@ -12840,7 +12840,7 @@ EEEE1001 FL 39
 FFFF1001 PS 57
 
 Academic record for fName lName (Student ID: 1000795)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 60
@@ -12867,7 +12867,7 @@ AAAA1001 FL 48
 BBBB1001 FL 22
 
 Academic record for fName lName (Student ID: 1000797)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -12875,7 +12875,7 @@ BBBB1001 DN 77
 CCCC1001 CR 68
 
 Academic record for fName lName (Student ID: 1000798)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -12976,7 +12976,7 @@ BBBB2001 CR 65
 CCCC2001 FL 31
 
 Academic record for fName lName (Student ID: 1000803)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 56
@@ -13002,7 +13002,7 @@ JJJJ2001 FL 48
 AAAA2002 CR 70
 
 Academic record for fName lName (Student ID: 1000804)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -13019,7 +13019,7 @@ AAAA2001 PS 52
 BBBB2001 DN 76
 
 Academic record for fName lName (Student ID: 1000805)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 48
@@ -13039,7 +13039,7 @@ JJJJ1001 FL 45
 AAAA2001 PS 54
 
 Academic record for fName lName (Student ID: 1000807)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 65
@@ -13049,7 +13049,7 @@ DDDD1001 CR 73
 EEEE1001 CR 69
 
 Academic record for fName lName (Student ID: 1000808)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -13078,7 +13078,7 @@ CCCC2002 CR 67
 DDDD2002 CR 70
 
 Academic record for fName lName (Student ID: 1000809)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 81
@@ -13107,7 +13107,7 @@ EEEE2001 CR 67
 FFFF2001 CR 65
 
 Academic record for fName lName (Student ID: 1000811)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 76
@@ -13148,7 +13148,7 @@ AAAA2001 DN 84
 BBBB2001 DN 81
 
 Academic record for fName lName (Student ID: 1000813)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -13198,7 +13198,7 @@ IIII1001 DN 80
 JJJJ1001 PS 52
 
 Academic record for fName lName (Student ID: 1000817)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 65
@@ -13223,13 +13223,13 @@ BBBB1001 CR 65
 CCCC1001 PS 61
 
 Academic record for fName lName (Student ID: 1000820)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 79
 
 Academic record for fName lName (Student ID: 1000821)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -13316,7 +13316,7 @@ GGGG2001 FL 19
 HHHH2001 CR 74
 
 Academic record for fName lName (Student ID: 1000826)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 68
@@ -13381,7 +13381,7 @@ CCCC2002 CR 70
 DDDD2002 PS 64
 
 Academic record for fName lName (Student ID: 1000830)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 66
@@ -13396,7 +13396,7 @@ EEEE1001 CR 69
 FFFF1001 CR 70
 
 Academic record for fName lName (Student ID: 1000832)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -13458,7 +13458,7 @@ CCCC2001 FL 43
 DDDD2001 DN 78
 
 Academic record for fName lName (Student ID: 1000835)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 10
@@ -13509,7 +13509,7 @@ CCCC2002 PS 50
 DDDD2002 CR 66
 
 Academic record for fName lName (Student ID: 1000837)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -13528,7 +13528,7 @@ EEEE1001 FL 43
 FFFF1001 CR 67
 
 Academic record for fName lName (Student ID: 1000839)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 58
@@ -13548,7 +13548,7 @@ DDDD2001 DN 84
 EEEE2001 DN 75
 
 Academic record for fName lName (Student ID: 1000840)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 51
@@ -13580,7 +13580,7 @@ HHHH2001 FL 11
 IIII2001 DN 77
 
 Academic record for fName lName (Student ID: 1000842)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 66
@@ -13609,7 +13609,7 @@ CCCC2002 FL 34
 DDDD2002 CR 67
 
 Academic record for fName lName (Student ID: 1000843)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -13672,7 +13672,7 @@ HHHH2001 FL 27
 IIII2001 PS 50
 
 Academic record for fName lName (Student ID: 1000846)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 64
@@ -13749,7 +13749,7 @@ AAAA2001 DN 80
 BBBB2001 CR 66
 
 Academic record for fName lName (Student ID: 1000851)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 76
@@ -13776,7 +13776,7 @@ BBBB2001 PS 60
 CCCC2001 FL 25
 
 Academic record for fName lName (Student ID: 1000853)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -13787,7 +13787,7 @@ EEEE1001 FL 24
 FFFF1001 FL 20
 
 Academic record for fName lName (Student ID: 1000854)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 4
@@ -13824,7 +13824,7 @@ AAAA2001 FL 14
 BBBB2001 PS 54
 
 Academic record for fName lName (Student ID: 1000856)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 74
@@ -13882,7 +13882,7 @@ CCCC2002 PS 51
 DDDD2002 PS 57
 
 Academic record for fName lName (Student ID: 1000859)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -13939,7 +13939,7 @@ HHHH2001 CR 67
 IIII2001 FL 4
 
 Academic record for fName lName (Student ID: 1000862)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 25
@@ -13955,7 +13955,7 @@ JJJJ1001 FL 32
 AAAA2001 DN 79
 
 Academic record for fName lName (Student ID: 1000863)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -13982,7 +13982,7 @@ AAAA2002 CR 66
 BBBB2002 FL 46
 
 Academic record for fName lName (Student ID: 1000864)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
@@ -14030,7 +14030,7 @@ FFFF2001 PS 54
 GGGG2001 CR 73
 
 Academic record for fName lName (Student ID: 1000867)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 61
@@ -14167,7 +14167,7 @@ AAAA2002 FL 37
 BBBB2002 FL 44
 
 Academic record for fName lName (Student ID: 1000873)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 57
@@ -14218,7 +14218,7 @@ BBBB2002 PS 53
 CCCC2002 CR 66
 
 Academic record for fName lName (Student ID: 1000875)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -14247,7 +14247,7 @@ CCCC2002 CR 68
 DDDD2002 PS 53
 
 Academic record for fName lName (Student ID: 1000876)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -14298,7 +14298,7 @@ JJJJ2001 FL 2
 AAAA2002 FL 0
 
 Academic record for fName lName (Student ID: 1000878)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 3
@@ -14322,7 +14322,7 @@ HHHH2001 DN 81
 IIII2001 CR 73
 
 Academic record for fName lName (Student ID: 1000879)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 10
@@ -14334,7 +14334,7 @@ FFFF1001 CR 65
 GGGG1001 CR 71
 
 Academic record for fName lName (Student ID: 1000880)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 52
@@ -14429,7 +14429,7 @@ JJJJ2001 FL 27
 AAAA2002 DN 78
 
 Academic record for fName lName (Student ID: 1000885)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 83
@@ -14531,7 +14531,7 @@ EEEE1001 DN 79
 FFFF1001 DN 84
 
 Academic record for fName lName (Student ID: 1000892)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -14539,7 +14539,7 @@ BBBB1001 CR 72
 CCCC1001 DN 83
 
 Academic record for fName lName (Student ID: 1000893)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 45
@@ -14547,7 +14547,7 @@ BBBB1001 DN 84
 CCCC1001 FL 30
 
 Academic record for fName lName (Student ID: 1000894)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 82
@@ -14630,14 +14630,14 @@ JJJJ2001 DN 75
 AAAA2002 CR 70
 
 Academic record for fName lName (Student ID: 1000898)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 84
 BBBB1001 PS 64
 
 Academic record for fName lName (Student ID: 1000899)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77
@@ -14652,7 +14652,7 @@ IIII1001 PS 52
 JJJJ1001 CR 69
 
 Academic record for fName lName (Student ID: 1000900)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 16
@@ -14675,7 +14675,7 @@ FFFF1001 CR 65
 GGGG1001 FL 37
 
 Academic record for fName lName (Student ID: 1000902)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 74
@@ -14688,7 +14688,7 @@ GGGG1001 CR 70
 HHHH1001 FL 32
 
 Academic record for fName lName (Student ID: 1000903)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 47
@@ -14705,7 +14705,7 @@ AAAA2001 PS 61
 BBBB2001 CR 69
 
 Academic record for fName lName (Student ID: 1000904)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 51
@@ -14773,7 +14773,7 @@ CCCC1001 CR 69
 DDDD1001 DN 80
 
 Academic record for fName lName (Student ID: 1000908)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 58
@@ -14781,7 +14781,7 @@ BBBB1001 FL 2
 CCCC1001 CR 67
 
 Academic record for fName lName (Student ID: 1000909)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 56
@@ -14801,7 +14801,7 @@ DDDD2001 CR 71
 EEEE2001 DN 75
 
 Academic record for fName lName (Student ID: 1000910)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -14842,7 +14842,7 @@ CCCC2002 DN 81
 DDDD2002 FL 46
 
 Academic record for fName lName (Student ID: 1000912)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 83
@@ -14899,7 +14899,7 @@ GGGG2001 DN 84
 HHHH2001 PS 53
 
 Academic record for fName lName (Student ID: 1000915)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 72
@@ -14941,7 +14941,7 @@ IIII1001 DN 80
 JJJJ1001 DN 75
 
 Academic record for fName lName (Student ID: 1000917)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 64
@@ -14987,7 +14987,7 @@ IIII2001 CR 74
 JJJJ2001 CR 68
 
 Academic record for fName lName (Student ID: 1000920)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -15007,7 +15007,7 @@ DDDD2001 PS 54
 EEEE2001 FL 6
 
 Academic record for fName lName (Student ID: 1000921)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77
@@ -15060,7 +15060,7 @@ EEEE2001 FL 43
 FFFF2001 PS 62
 
 Academic record for fName lName (Student ID: 1000925)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 24
@@ -15159,7 +15159,7 @@ AAAA2001 PS 63
 BBBB2001 CR 74
 
 Academic record for fName lName (Student ID: 1000931)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 79
@@ -15210,7 +15210,7 @@ IIII2001 FL 44
 JJJJ2001 FL 28
 
 Academic record for fName lName (Student ID: 1000934)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 57
@@ -15238,7 +15238,7 @@ BBBB2002 FL 11
 CCCC2002 DN 80
 
 Academic record for fName lName (Student ID: 1000935)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 38
@@ -15283,7 +15283,7 @@ BBBB2001 DN 78
 CCCC2001 FL 9
 
 Academic record for fName lName (Student ID: 1000938)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 49
@@ -15356,7 +15356,7 @@ DDDD2001 PS 56
 EEEE2001 DN 82
 
 Academic record for fName lName (Student ID: 1000941)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 4
@@ -15421,7 +15421,7 @@ AAAA2001 CR 74
 BBBB2001 DN 77
 
 Academic record for fName lName (Student ID: 1000945)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 67
@@ -15456,7 +15456,7 @@ IIII2001 FL 31
 JJJJ2001 CR 73
 
 Academic record for fName lName (Student ID: 1000947)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 73
@@ -15533,7 +15533,7 @@ CCCC2002 CR 65
 DDDD2002 CR 67
 
 Academic record for fName lName (Student ID: 1000951)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 50
@@ -15546,7 +15546,7 @@ GGGG1001 FL 37
 HHHH1001 FL 3
 
 Academic record for fName lName (Student ID: 1000952)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 CR 69
@@ -15564,7 +15564,7 @@ BBBB2001 FL 38
 CCCC2001 DN 81
 
 Academic record for fName lName (Student ID: 1000953)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -15618,7 +15618,7 @@ AAAA2002 DN 76
 BBBB2002 CR 73
 
 Academic record for fName lName (Student ID: 1000956)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 63
@@ -15663,7 +15663,7 @@ GGGG2001 FL 33
 HHHH2001 DN 77
 
 Academic record for fName lName (Student ID: 1000958)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 63
@@ -15680,7 +15680,7 @@ AAAA2001 PS 53
 BBBB2001 CR 67
 
 Academic record for fName lName (Student ID: 1000959)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 19
@@ -15749,7 +15749,7 @@ JJJJ2001 PS 59
 AAAA2002 CR 69
 
 Academic record for fName lName (Student ID: 1000962)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -15784,7 +15784,7 @@ BBBB1001 CR 74
 CCCC1001 CR 74
 
 Academic record for fName lName (Student ID: 1000964)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 78
@@ -15877,7 +15877,7 @@ IIII1001 DN 81
 JJJJ1001 PS 59
 
 Academic record for fName lName (Student ID: 1000971)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -15901,7 +15901,7 @@ HHHH2001 DN 75
 IIII2001 DN 77
 
 Academic record for fName lName (Student ID: 1000972)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -15937,14 +15937,14 @@ BBBB1001 FL 30
 CCCC1001 DN 84
 
 Academic record for fName lName (Student ID: 1000975)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
 BBBB1001 FL 24
 
 Academic record for fName lName (Student ID: 1000976)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 51
@@ -15967,7 +15967,7 @@ GGGG2001 CR 70
 HHHH2001 PS 57
 
 Academic record for fName lName (Student ID: 1000977)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77
@@ -16097,7 +16097,7 @@ AAAA2002 DN 75
 BBBB2002 FL 27
 
 Academic record for fName lName (Student ID: 1000983)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 80
@@ -16143,7 +16143,7 @@ DDDD2001 PS 53
 EEEE2001 PS 62
 
 Academic record for fName lName (Student ID: 1000985)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 FL 34
@@ -16171,7 +16171,7 @@ BBBB2002 PS 57
 CCCC2002 CR 74
 
 Academic record for fName lName (Student ID: 1000986)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 75
@@ -16208,7 +16208,7 @@ CCCC2002 FL 4
 DDDD2002 CR 73
 
 Academic record for fName lName (Student ID: 1000988)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 60
@@ -16257,7 +16257,7 @@ HHHH1001 CR 71
 IIII1001 FL 26
 
 Academic record for fName lName (Student ID: 1000991)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 PS 60
@@ -16268,7 +16268,7 @@ EEEE1001 DN 82
 FFFF1001 FL 19
 
 Academic record for fName lName (Student ID: 1000992)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 81
@@ -16297,7 +16297,7 @@ CCCC2002 PS 55
 DDDD2002 CR 73
 
 Academic record for fName lName (Student ID: 1000993)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77
@@ -16387,7 +16387,7 @@ AAAA2002 PS 52
 BBBB2002 PS 55
 
 Academic record for fName lName (Student ID: 1000997)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics
 AAAA1001 DN 77

@@ -212,7 +212,7 @@ public class StudentDatabase {
             }
             myReader.close();
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
+            System.out.println("File Not Found.");
             e.printStackTrace();
         } catch (Exception e) {
             throw new RuntimeException(e);

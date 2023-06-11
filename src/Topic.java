@@ -4,8 +4,12 @@ public class Topic {
 
 
     public Topic(String code, String grade, int mark) {
-        this.code = code;
-        this.grade = grade;
+        if (code.matches("^[A-Z]{4}\\d{4}$")) {
+            this.code = code;
+        } else throw new IllegalArgumentException("Invalid Topic Code");
+        if (grade.equals("FL") || grade.equals("PS") || grade.equals("CR") || grade.equals("DN")|| grade.equals("HD")){
+            this.grade = grade;
+        } else throw new IllegalArgumentException("Grade must be FL,PS,CR,DN,HD");
         this.mark = mark;
     }
 

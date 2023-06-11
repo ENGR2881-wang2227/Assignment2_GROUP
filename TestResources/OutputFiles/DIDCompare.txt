@@ -13,6 +13,6 @@ COMP1000 DN 75
 PHYS1010 HD 93
 
 Academic record for John Howard (Student ID: 9987654)
-Degree: Art
+Degree: Arts
 Major: Politics
 Minor: Economics

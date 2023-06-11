@@ -16,7 +16,7 @@ class Panels extends JFrame {
 
 
         //Setting up top menu
-        String[] MenuOptions = {"File", "Null", "Null"};
+        String[] MenuOptions = {"File"};
         JComboBox<String> MenuDropDown = new JComboBox<>(MenuOptions);
         add(MenuDropDown);
         MenuDropDown.setBounds(5, 8, 100, 18);
@@ -40,7 +40,7 @@ class Panels extends JFrame {
         JLabel LastName = new JLabel("Last Name");
         JLabel FirstName = new JLabel("First Name(s)");
         JLabel Degree = new JLabel("Degree");
-        String[] DegreesToChoose = {"Science", "Art", "Medicine"};
+        String[] DegreesToChoose = {"Science", "Arts", "Medicine"};
 
         panel.add(Student);
         Student.setBounds(10, 0, 500, 50);
@@ -63,7 +63,7 @@ class Panels extends JFrame {
                 } else {
                     StudentIDTxt.setText("");
                     JOptionPane.showMessageDialog(
-                            null, "Please Enter vaild student ID");
+                            null, "Please enter a vaild 7 digit student ID");
                 }
             }
         });
@@ -141,7 +141,7 @@ class Panels extends JFrame {
                 } else {
                     StudentIDTxt.setText("");
                     JOptionPane.showMessageDialog(
-                            null, "Please Enter vaild Mark");
+                            null, "Please Enter a Vaild Mark");
                 }
             }
         });
@@ -288,7 +288,7 @@ class Panels extends JFrame {
                                 null, "Please Enter Last Name");
                     } else if (FirstNameTXT.getText().isEmpty() && StudentIDTxt.getText().isEmpty() && StudentIDTxt.getText().isEmpty()) {
                         JOptionPane.showMessageDialog(
-                                null, "please Enter all fields");
+                                null, "Please Enter Student Details");
                     } else {
                         String test = "";
                         if (StudentID.length() == 7) {
@@ -296,7 +296,7 @@ class Panels extends JFrame {
                                 ChosenDegree = "S";
                                 test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName);
                                 JOptionPane.showMessageDialog(c, test);
-                            } else if (ChosenDegree.equals("Art")) {
+                            } else if (ChosenDegree.equals("Arts")) {
                                 ChosenDegree = "A";
                                 if (MajorTXT.getText().isEmpty() || MinorTXT.getText().isEmpty()) {
                                     JOptionPane.showMessageDialog(c, "Please enter an Arts Major and  Minor");
@@ -326,7 +326,7 @@ class Panels extends JFrame {
                             }
                         } else {
                             JOptionPane.showMessageDialog(
-                                    null, "Please Enter 7 digits student ID");
+                                    null, "Please Enter a Valid 7 Digit Student Number");
                         }
 
 
@@ -366,10 +366,13 @@ class Panels extends JFrame {
                         } else {
                             PrizesTXT.setText("");
                         }
+                        TopicCodeTXT.setText("");
+                        GradeDropDown.setSelectedItem("FL");
+                        MarkTXT.setText("");
                         AddStudent.setText("New Student");
                     }
                     else {
-                        JOptionPane.showMessageDialog(c, "Can't find student");
+                        JOptionPane.showMessageDialog(c, "Student Not Found");
                     }
 
                 }

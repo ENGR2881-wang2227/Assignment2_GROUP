@@ -9,7 +9,7 @@ public class AStudentTest {
         String testInput = "A,1000001,Student,Test,Major,Minor";
         AStudent test = new AStudent(testInput);
         assertAll(
-                () -> assertEquals("Art", test.getDegree()),
+                () -> assertEquals("Arts", test.getDegree()),
                 () -> assertEquals("1000001", test.getStudentID()),
                 () -> assertEquals("Student", test.getFirstName()),
                 () -> assertEquals("Test", test.getLastName()),
@@ -23,6 +23,6 @@ public class AStudentTest {
         String testInput = "A,1000001,Student,Test,Major,Minor";
         AStudent test = new AStudent(testInput);
         assertEquals("Test Student (Student ID: 1000001)\n" +
-                "Degree: Art\nMajor: Major\nMinor: Minor", test.show());
+                "Degree: Arts\nMajor: Major\nMinor: Minor", test.show());
     }
 }

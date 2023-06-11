@@ -180,8 +180,7 @@ public class StudentDatabase {
     }
 
     public ArrayList<Student> readFile(String filename){
-        try {
-            File myObj = new File(filename);
+        try {            File myObj = new File(filename);
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();

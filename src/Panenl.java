@@ -64,8 +64,6 @@ class Panels extends JFrame {
                     StudentIDTxt.setText("");
                     JOptionPane.showMessageDialog(
                             null, "Please Enter vaild student ID");
-
-
                 }
             }
         });
@@ -144,8 +142,6 @@ class Panels extends JFrame {
                     StudentIDTxt.setText("");
                     JOptionPane.showMessageDialog(
                             null, "Please Enter vaild Mark");
-
-
                 }
             }
         });
@@ -257,55 +253,87 @@ class Panels extends JFrame {
 
         AddStudent.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
-                String ChosenDegree = DegreeDropDown.getSelectedItem().toString();
-                String Mark = MarkTXT.getText();
-                String Grade = GradeDropDown.getSelectedItem().toString();
-                String TopicCode = TopicCodeTXT.getText();
-                String StudentID = StudentIDTxt.getText();
-                String LastName = LastNameTxt.getText();
-                String FirstName = FirstNameTXT.getText();
-                String Major = MajorTXT.getText();
-                String Minor = MinorTXT.getText();
-
-
-                if (FirstNameTXT.getText().isEmpty()) {
-                    JOptionPane.showMessageDialog(
-                            null, "Please Enter First Name");
-                } else if (StudentIDTxt.getText().isEmpty()) {
-                    JOptionPane.showMessageDialog(
-                            null, "Please Enter Student ID");
-                } else if (LastNameTxt.getText().isEmpty()) {
-                    JOptionPane.showMessageDialog(
-                            null, "Please Enter Last Name");
-                } else if (FirstNameTXT.getText().isEmpty() && StudentIDTxt.getText().isEmpty() && StudentIDTxt.getText().isEmpty()) {
-                    JOptionPane.showMessageDialog(
-                            null, "please Enter all fields");
+                if (AddStudent.getText() == "New Student") {
+                    DegreeDropDown.setSelectedItem("Science");
+                    StudentIDTxt.setText("");
+                    LastNameTxt.setText("");
+                    FirstNameTXT.setText("");
+                    MajorTXT.setText("");
+                    MinorTXT.setText("");
+                    PrizesTXT.setText("");
+                    TopicCodeTXT.setText("");
+                    GradeDropDown.setSelectedItem("FL");
+                    MarkTXT.setText("");
+                    AddStudent.setText("Add Student");
                 } else {
-                    if (StudentID.length() == 7) {
-                        if (ChosenDegree.equals("Science")) {
-                            ChosenDegree = "S";
-                            String test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName);
-                            JOptionPane.showMessageDialog(c, test);
-                        } else if (ChosenDegree.equals("Art")) {
-                            ChosenDegree = "A";
-                            String test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName + "," + Major + "," + Minor);
-                            JOptionPane.showMessageDialog(c, test);
+                    String ChosenDegree = DegreeDropDown.getSelectedItem().toString();
+                    String Mark = MarkTXT.getText();
+                    String Grade = GradeDropDown.getSelectedItem().toString();
+                    String TopicCode = TopicCodeTXT.getText();
+                    String StudentID = StudentIDTxt.getText();
+                    String LastName = LastNameTxt.getText();
+                    String FirstName = FirstNameTXT.getText();
+                    String Major = MajorTXT.getText();
+                    String Minor = MinorTXT.getText();
 
-                        } else if (ChosenDegree.equals("Medicine")) {
-                            ChosenDegree = "M";
-                            String test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName);
-                            JOptionPane.showMessageDialog(c, test);
-                        }
-                    } else {
+
+                    if (FirstNameTXT.getText().isEmpty()) {
                         JOptionPane.showMessageDialog(
-                                null, "Please Enter 7 digits student ID");
+                                null, "Please Enter First Name");
+                    } else if (StudentIDTxt.getText().isEmpty()) {
+                        JOptionPane.showMessageDialog(
+                                null, "Please Enter Student ID");
+                    } else if (LastNameTxt.getText().isEmpty()) {
+                        JOptionPane.showMessageDialog(
+                                null, "Please Enter Last Name");
+                    } else if (FirstNameTXT.getText().isEmpty() && StudentIDTxt.getText().isEmpty() && StudentIDTxt.getText().isEmpty()) {
+                        JOptionPane.showMessageDialog(
+                                null, "please Enter all fields");
+                    } else {
+                        String test = "";
+                        if (StudentID.length() == 7) {
+                            if (ChosenDegree.equals("Science")) {
+                                ChosenDegree = "S";
+                                test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName);
+                                JOptionPane.showMessageDialog(c, test);
+                            } else if (ChosenDegree.equals("Art")) {
+                                ChosenDegree = "A";
+                                if (MajorTXT.getText().isEmpty() || MinorTXT.getText().isEmpty()) {
+                                    JOptionPane.showMessageDialog(c, "Please enter an Arts Major and  Minor");
+                                    test = "arts";
+                                } else {
+                                    test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName + "," + Major + "," + Minor);
+                                    JOptionPane.showMessageDialog(c, test);
+                                }
+
+                            } else if (ChosenDegree.equals("Medicine")) {
+                                ChosenDegree = "M";
+                                String add = "";
+                                if (!PrizesTXT.getText().isEmpty()){
+                                    String[] prizes = PrizesTXT.getText().split("\n");
+                                    for (String s : prizes) {
+                                        add += "," + s;
+                                    }
+                                }
+                                test = studentDatabase.addStudent(ChosenDegree + "," + StudentID + "," + LastName + "," + FirstName + add);
+                                JOptionPane.showMessageDialog(c, test);
+                            }
+                            if (!test.equals("Already in system") && !test.equals("arts") && !test.equals("")) {
+                                AddStudent.setText("New Student");
+                            } else if (test.equals("arts")){
+                            } else {
+                                StudentIDTxt.setText("");
+                            }
+                        } else {
+                            JOptionPane.showMessageDialog(
+                                    null, "Please Enter 7 digits student ID");
+                        }
+
+
                     }
 
 
                 }
-
-
             }
         });
 
@@ -321,7 +349,26 @@ class Panels extends JFrame {
                     if (s != null) {
                         JOptionPane.showMessageDialog(c,
                                 s.show());
-                    } else {
+                        StudentIDTxt.setText(s.getStudentID());
+                        LastNameTxt.setText(s.getLastName());
+                        FirstNameTXT.setText(s.getFirstName());
+                        DegreeDropDown.setSelectedItem(s.getDegree());
+                        if (s instanceof AStudent) {
+                            MajorTXT.setText(((AStudent) s).getMajor());
+                            MinorTXT.setText(((AStudent) s).getMinor());
+                        } else {
+                            MajorTXT.setText("");
+                            MinorTXT.setText("");
+                        }
+                        if (s instanceof MStudent) {
+                                String prizes = "";
+                                PrizesTXT.setText(((MStudent) s).getList());
+                        } else {
+                            PrizesTXT.setText("");
+                        }
+                        AddStudent.setText("New Student");
+                    }
+                    else {
                         JOptionPane.showMessageDialog(c, "Can't find student");
                     }
 
@@ -337,12 +384,24 @@ class Panels extends JFrame {
                 String Grade = GradeDropDown.getSelectedItem().toString();
                 String TopicCode = TopicCodeTXT.getText();
                 String StudentID = StudentIDTxt.getText();
-                String result = "R," + StudentID + "," + TopicCode + "," + Grade + "," + Mark;
-                String result1 = "No Added";
-                if (Mark.length() == 2 || Mark.length() == 1 || Mark.equals("100")) {
-                    if (TopicCode.length() == 8) {
+                String result = Mark.isEmpty() ?
+                        "R," + StudentID + "," + TopicCode + "," + Grade :
+                        "R," + StudentID + "," + TopicCode + "," + Grade + "," + Mark;
+                String result1 = "Topic already exists for this student";
+                if (Mark.length() == 2 || Mark.length() == 1 || Mark.equals("100") || Mark.isEmpty()) {
+                    if (TopicCode.matches("^[A-Z]{4}\\d{4}$")) {
                         if (studentDatabase.addResult(result, StudentID) == true) {
                             result1 = "Added";
+                        } else {
+                                Student s = studentDatabase.findStudent(StudentID);
+                                if (s !=  null) {
+                                Topic t = studentDatabase.findStudent(StudentID).getTopicResult(TopicCode);
+                                GradeDropDown.setSelectedItem(t.getGrade());
+                                MarkTXT.setText("" + t.getMark());
+                                result1 += "\n" + t.show();
+                            } else {
+                                    result1 = "Enter valid student ID";
+                                }
                         }
                         JOptionPane.showMessageDialog(c, result1
                         );
@@ -360,26 +419,61 @@ class Panels extends JFrame {
         FindTopicResult.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String StudentID = StudentIDTxt.getText();
                 String TopicCode = TopicCodeTXT.getText();
-                JOptionPane.showMessageDialog(c, studentDatabase.findResults(TopicCode)
-                );
+                Student s; Topic T;
+                if ((s = studentDatabase.findStudent(StudentID)) != null) {
+                    if ((T = s.getTopicResult(TopicCode)) != null) {
+                        String out = s.showName() + "\n" + T.show();
+                        JOptionPane.showMessageDialog(c, out);
+                        MarkTXT.setText(("" + T.getMark()));
+                        GradeDropDown.setSelectedItem(T.getGrade());
+                    } else {
+                        JOptionPane.showMessageDialog(c, "No Result for this Topic");
+                        MarkTXT.setText("" );
+                        GradeDropDown.setSelectedItem("FL");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(c,"There is no student with that ID");
+                }
             }
         });
 
         AwardPrize.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String prizeName = PrizeNameTXT.getText();
-                String template = TemplateTXT.getText();
-                String numberOfTopic = NoOfTopicsTXT.getText();
-                String StudentID = StudentIDTxt.getText();
-                String reward = StudentID + "," + prizeName + "," + template + "," + numberOfTopic;
-                String result1 = "Null";
-                if (studentDatabase.addRewards(reward) == true) {
-                    result1 = "Added";
+                String result1 = "Prize Awarded";
+                if (PrizeNameTXT.getText().isEmpty()) {
+                    result1 = "Please enter a prize name";
+                } else if (TemplateTXT.getText().isEmpty()) {
+                    result1 = "Please enter a template";
+                } else if (NoOfTopicsTXT.getText().isEmpty()) {
+                    result1 = "Please enter an integer for minimum number of topics required";
+                } else {
+                    String prizeName = PrizeNameTXT.getText();
+                    String template = TemplateTXT.getText();
+                    String numberOfTopic = NoOfTopicsTXT.getText();
+                    if (numberOfTopic.matches("[0-9]{1,}")) {
+                        String reward = "P," + prizeName + "," + template + "," + numberOfTopic;
+                        if (!studentDatabase.addPrize(reward)) {
+                            result1 = "Prize already exists.";
+                        }
+                        if (studentDatabase.awardPrizes()) {
+
+                        } else {
+                            result1 = "No student meets the requirements for this prize";
+                        }
+                        PrizeNameTXT.setText("");
+                        TemplateTXT.setText("");
+                        NoOfTopicsTXT.setText("");
+                    } else {
+                        result1 = "Please enter an integer for minimum number of topics required";
+                        NoOfTopicsTXT.setText("");
+                    }
+                    //String StudentID = StudentIDTxt.getText();
+
                 }
-                JOptionPane.showMessageDialog(c, result1
-                );
+                JOptionPane.showMessageDialog(c, result1);
             }
         });
 
@@ -394,6 +488,18 @@ class Panels extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 studentDatabase.clearRecords();
+                DegreeDropDown.setSelectedItem("Science");
+                StudentIDTxt.setText("");
+                LastNameTxt.setText("");
+                FirstNameTXT.setText("");
+                MajorTXT.setText("");
+                MinorTXT.setText("");
+                PrizesTXT.setText("");
+                TopicCodeTXT.setText("");
+                GradeDropDown.setSelectedItem("FL");
+                MarkTXT.setText("");
+                AddStudent.setText("Add Student");
+                JOptionPane.showMessageDialog(c, "Records Cleared");
             }
         });
 

@@ -74,6 +74,35 @@ class StudentTest {
         assertEquals(num,output);
     }
 
+    //Test Student Constructor
+    @Test
+    public void StudentConstructorTest() {
+        String testInput = "S,1000001,Student,Test";
+        Student test = new Student(testInput);
+        assertAll(
+                () -> assertEquals("Science", test.getDegree()),
+                () -> assertEquals("1000001", test.getStudentID()),
+                () -> assertEquals("Student", test.getFirstName()),
+                () -> assertEquals("Test", test.getLastName())
+        );
+    }
+
+    @Test
+    void TestSetDegree() {
+        String testInput = "S,1000001,Student,Test";
+        Student test = new Student(testInput);
+        test.setDegree("M");
+        assertEquals("Medicine", test.getDegree());
+    }
+
+    @Test
+    void TestSetIncorrectDegree() {
+        String testInput = "S,1000001,Student,Test";
+        Student test = new Student(testInput);
+        test.setDegree("K");
+        assertEquals("K", test.getDegree());
+    }
+
     //Testing an incorrect degree input (F is not a valid degree)
     @Test
     public void IncorrectDegreeTest() {
@@ -123,7 +152,7 @@ class StudentTest {
     @Test
     public void BlankNameTest() {
         String testInput = "S,100001,Student,";
-        assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             Student test = new Student(testInput);
         });
     }
@@ -163,7 +192,7 @@ class StudentTest {
         test.addResult(testResult);
         assertEquals("Test Student (Student ID: 1000001)\n" +
                 "Degree: Science\n" +
-                "Topic Code: AAAA1111, Grade: DN. \n", test.show());
+                "AAAA1111 DN 75", test.show());
     }
 
     //Testing result input with too few arguments
@@ -172,7 +201,7 @@ class StudentTest {
         String testInput = "S,1000001,Student,Test";
         String testResult = "R,1000001,AAAA1111";
         Student test = new Student(testInput);
-        assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             test.addResult(testResult);
         });
     }
@@ -185,6 +214,6 @@ class StudentTest {
         test.addResult(testResult);
         assertEquals("Test Student (Student ID: 1000001)\n" +
                 "Degree: Science\n" +
-                "Topic Code: AAAA1111, Grade: DN, Mark: 82. \n", test.show());
+                "AAAA1111 DN 82", test.show());
     }
 }

@@ -1,5 +1,5 @@
 S,9800123,Smith,John Paul
-M,9821012,Jones,Mary,Chemistry Prize 1998
+M,9821012,Jones,Mary
 A,9987654,Howard,John,Politics,Economics
 R,9821012,BIOL1000,HD,89
 R,9821012,BIOL1000,CR,68

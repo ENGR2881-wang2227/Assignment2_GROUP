@@ -25,4 +25,5 @@ public class Prize {
         String s = "Name: " + name + " Template: " + template + " Topics Required: " + topicsRequired + "\n";
         return s;
     }
+
 }

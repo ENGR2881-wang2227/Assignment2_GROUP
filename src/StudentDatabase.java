@@ -3,11 +3,11 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class StudentDatabase {
     private ArrayList<Student> database = new ArrayList<>();
+    private LinkedList<Prize> prizes =  new LinkedList<>();
     private int studentCount;
 
     public ArrayList<Student> getDb() {
@@ -92,6 +92,48 @@ public class StudentDatabase {
 
     }
 
+    public boolean addPrize(String prize) {
+        String[] list = prize.split(",");
+        for (Prize p : prizes) {
+            if (p.getName().equals(list[1])) {
+                return false;
+            }
+        }
+        prizes.add(new Prize(list[1], list[2], list[3]));
+        return true;
+    }
+
+    public boolean awardPrize(Prize prize) {
+        MStudent recipient = null; double highest = 0; int req = Integer.parseInt(prize.getTopicsRequired());
+        for (Student m : database) {
+            if (m instanceof MStudent) {
+                ArrayList<Integer> scores = new ArrayList<>();
+                for (Topic t : m.getResult()) {
+                    if (t.getCode().substring(0,prize.getTemplate().length()).matches(prize.getTemplate())) {
+                        scores.add(t.getMark());
+                    }
+                }
+                if (scores.size() >= req) {
+                    Collections.sort(scores);
+                    double total = 0;
+                    for (int i = 0; i < req; i++) {
+                        total += scores.get(i);
+                    }
+                    if (total > highest) {
+                        recipient = (MStudent) m;
+                        highest = total;
+                    }
+                }
+            }
+        }
+        if (recipient != null) {
+            recipient.addPrize(prize);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 
     public boolean addRewards(String reward) {
         String[] list = reward.split(",");
@@ -107,18 +149,30 @@ public class StudentDatabase {
         return b;
     }
 
+    public boolean awardPrizes() {
+        boolean b = false;
+        for (Prize p : prizes) {
+           if (awardPrize(p)) {
+               b = true;
+           }
+        }
+        prizes.clear();
+        return b;
+    }
+
     public String printRecords() {
+//
         String output = "";
         if (database.size() != 0) {
             for (int i = 0; i < database.size(); i++) {
                 output += "Academic record for ";
                 output += database.get(i).show();
-                output += "\n";
+                output += "\n\n";
             }
         } else {
             output = "no records";
         }
-        return output;
+        return output.trim();
     }
 
     public void clearRecords() {
@@ -136,9 +190,9 @@ public class StudentDatabase {
                     case "S", "M", "A" -> {
                         if (command.length == 4 || command.length == 6) {
                             addStudent(data);
-                        } else {
-                            throw new Exception("malformed student command");
-                        }
+                        } else if (command[0].equals("M") && command.length > 4){
+                            addStudent(data);
+                        } else throw new Exception("malformed student command");
                     }
                     case "R" -> {
                         if (command.length == 4 || command.length == 5) {
@@ -149,9 +203,9 @@ public class StudentDatabase {
                     }
                     case "P" -> {
                         if (command.length == 4) {
-                            addRewards(data);
+                            addPrize(data);
                         } else {
-                            throw new Exception("malformed student command");
+                            throw new Exception("malformed prize command");
                         }
                     }
                 }
@@ -163,15 +217,14 @@ public class StudentDatabase {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
+        awardPrizes();
         return database;
     }
 
     public void recordsToFile(String destination){
-        String output = printRecords();
         try {
             FileWriter Writer = new FileWriter(destination);
-            Writer.write(output);
+            Writer.write(printRecords());
             Writer.close();
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {

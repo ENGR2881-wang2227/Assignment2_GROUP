@@ -1,0 +1,19 @@
+Academic record for John Paul Smith (Student ID: 9800123)
+Degree: Science
+COMP1000 PS 55
+COMP1001 DN 77
+HIST1234 HD 87
+PSYC0123 FL 42
+
+Academic record for Mary Jones (Student ID: 9821012)
+Degree: Medicine
+Prize: Chemistry Prize 1998
+BIOL1000 HD 89
+CHEM1001 HD 92
+COMP1000 DN 75
+PHYS1010 HD 93
+
+Academic record for John Howard (Student ID: 9987654)
+Degree: Art
+Major: Politics
+Minor: Economics

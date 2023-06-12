@@ -180,10 +180,12 @@ public class StudentDatabase {
     }
 
     public ArrayList<Student> readFile(String filename){
+        int line = 0;
         try {            File myObj = new File(filename);
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
+                line++;
                 String[] command = data.split(",");
                 switch (command[0]) {
                     case "S", "M", "A" -> {
@@ -191,20 +193,20 @@ public class StudentDatabase {
                             addStudent(data);
                         } else if (command[0].equals("M") && command.length > 4){
                             addStudent(data);
-                        } else throw new Exception("malformed student command");
+                        } else throw new Exception("Malformed student command on line " + line + ":[ " + data + "]");
                     }
                     case "R" -> {
                         if (command.length == 4 || command.length == 5) {
                             addResult(data,command[1]);
                         } else {
-                            throw new Exception("malformed result command");
+                            throw new Exception("Malformed result command on line " + line + ": [" + data + "]");
                         }
                     }
                     case "P" -> {
                         if (command.length == 4) {
                             addPrize(data);
                         } else {
-                            throw new Exception("malformed prize command");
+                            throw new Exception("Malformed prize command, line " + line + ": [" + data + "]");
                         }
                     }
                 }

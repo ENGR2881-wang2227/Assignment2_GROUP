@@ -402,7 +402,7 @@ class StudentDatabaseTest {
         testDB.recordsToFile("TestResources/OutputFiles/out.txt");
         String Expected = Files.readString(Paths.get("TestResources/OutputFiles/DIDCompare.txt"));
         String Actual = Files.readString(Paths.get("TestResources/OutputFiles/out.txt"));
-        //Files.delete(Path.of("TestResources/OutputFiles/out.txt"));
+        Files.delete(Path.of("TestResources/OutputFiles/out.txt"));
         assertEquals(Expected, Actual);
     }
 }
